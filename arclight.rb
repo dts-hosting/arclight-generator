@@ -16,7 +16,7 @@ run "bundle"
 
 after_bundle do
   in_root do
-    generate "blacklight:install --devise"
+    generate "blacklight:install"
     generate "arclight:install", "-f"
     rails_command "db:migrate"
   end
