@@ -26,7 +26,7 @@ after_bundle do
 
   git :init
   git add: "."
-  git commit: "-a -m 'Initial commit'"
+  git commit: "-a -m 'Init: #{Time.now.utc}'"
 
   say "Job done! 🎉", :green
 end
