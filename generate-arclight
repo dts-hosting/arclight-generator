@@ -1,0 +1,14 @@
+#!/bin/bash
+#./generate.sh
+
+# https://github.com/projectblacklight/arclight/wiki/Creating,-installing,-and-running-your-ArcLight-application
+
+rm -rf ./arclight
+
+rails new arclight \
+  -d sqlite3 \
+  -m ./arclight.rb \
+  --css bootstrap \
+  -a propshaft \
+  -j importmap \
+  --skip-kamal

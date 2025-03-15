@@ -1,0 +1,20 @@
+---
+demo:
+  name: Demo Repository
+  visit_notes: Please contact us to schedule a visit.
+  description: A wonderful demo repository for testing.
+  building: Building 38, Room 1E-21
+  contact_html: |
+    <div class="al-repository-contact-info">My Contact Info</div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Building 38, Room 1E-21</div>
+      <div class="al-repository-address">8600 Rockville Pike</div>
+      <div class="al-repository-city">Bethesda</div>
+      <div class="al-repository-state">MD</div>
+      <div class="al-repository-zip">20894</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: https://lyrasis.org/wp-content/uploads/2022/11/Lyrasis-Logo.png
+  google_request_url: ""
+  google_request_mappings: ""

@@ -1,0 +1,31 @@
+---
+repository: projectblacklight/arclight
+version_type: branch
+version_ref: main
+# version_type: ref
+# version: 086061a3e6713d27207d18d929311c3e2e695abd
+
+operations:
+  append:
+    - file: ".gitignore"
+      text: "/config/locales/en.yml\n"
+    - file: ".gitignore"
+      text: "/config/repositories.yml\n"
+    - file: ".gitignore"
+      text: "/public/styles.css\n"
+  copy:
+    - file: "files/docker-compose.yml"
+      to: "docker-compose.yml"
+    - file: "files/.standard.yml"
+      to: ".standard.yml"
+  create:
+    - file: "public/styles.css"
+      text: "/* Site specific CSS (not asset-pipelined) */"
+  insert:
+    - file: "app/views/layouts/application.html.erb"
+      after: "<%= yield :head %>\n"
+      text: "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles.css\">\n"
+  remove:
+    - ".rubocop.yml"
+    - ".solr_wrapper.yml"
+    - "app/javascript/controllers/hello_controller.js"
