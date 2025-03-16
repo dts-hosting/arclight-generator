@@ -7,6 +7,12 @@ version_ref: main
 
 operations:
   append:
+    - file: ".dockerignore"
+      text: "/config/locales/en.yml\n"
+    - file: ".dockerignore"
+      text: "/config/repositories.yml\n"
+    - file: ".dockerignore"
+      text: "/public/styles.css\n"
     - file: ".gitignore"
       text: "/config/locales/en.yml\n"
     - file: ".gitignore"
@@ -14,6 +20,8 @@ operations:
     - file: ".gitignore"
       text: "/public/styles.css\n"
   copy:
+    - file: "files/arclight"
+      to: "arclight"
     - file: "files/docker-compose.yml"
       to: "docker-compose.yml"
     - file: "files/.standard.yml"

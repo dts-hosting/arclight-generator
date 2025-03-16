@@ -1,6 +1,6 @@
 # ArcLight generator
 
-Generates an ArcLight application and site configuration.
+Generates an ArcLight application and manages site configurations.
 
 ## Setup
 
@@ -53,14 +53,37 @@ don't go so far as to `--skip-active-record` because Blacklight
 provides models that inherit from `ApplicationRecord`, so rather than
 remove the database we're just going to ignore it.
 
-## Creating site configuration
+## Site configuration
+
+### Create new site configuration
 
 ```bash
 bundle exec rake "site:init[lyrasis]"
 ```
 
-## Applying site configuration
+## Copying individual site configuration
 
 ```bash
-bundle exec rake "site:push[lyrasis]"
+bundle exec rake "site:copy[lyrasis]"
 ```
+
+### Syncing all site configuration
+
+```bash
+bundle exec rake "site:sync"
+```
+
+## Running ArcLight locally
+
+```bash
+cd ./arclight
+./arclight
+```
+
+This will start Solr and run the Rails dev server. ArcLight will be
+running at: `http://localhost:3000`. If you encounter an error about
+Solr not being available try again after a few seconds.
+
+## Building the ArcLight Docker image
+
+TODO

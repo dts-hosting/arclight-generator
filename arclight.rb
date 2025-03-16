@@ -11,6 +11,7 @@ gem_group :development, :test do
 end
 
 process_file_operations(config["operations"])
+directory File.join(__dir__, "config", "sites"), "sites", force: true
 
 run "bundle"
 
