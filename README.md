@@ -4,11 +4,16 @@ Generates an ArcLight application and manages site configurations.
 
 ## Setup
 
+Requires:
+
+- nodejs / nvm
+- ruby
+
 ```bash
-nvm install # version in .nvmrc
+nvm install # install version specified in .nvmrc
 nvm use
 
-rbenv install -s # version in .ruby-version
+rbenv install -s # install version specified in .ruby-version
 bundle install
 ```
 
@@ -55,29 +60,54 @@ remove the database we're just going to ignore it.
 
 ## Site configuration
 
+Per site files are required for:
+
+- `repositories.yml`
+- `locales.yml`
+- `styles.css`
+
 ### Create new site configuration
+
+To create an initial set of files:
 
 ```bash
 bundle exec rake "site:init[lyrasis]"
 ```
 
+This generates the required files under `./config/$site`.
+
 ## Copying individual site configuration
+
+This copies site configuration files into the ArcLight application
+for review and testing:
 
 ```bash
 bundle exec rake "site:copy[lyrasis]"
 ```
 
+- `repositories.yml` -> `./config/repositories.yml`
+- `locales.yml` -> `./config/locales/en.yml`
+- `styles.css` -> `./public/styles.css`
+
+The dev server will now be set to use this site's configuration.
+
 ### Syncing all site configuration
+
+Transfers all `./config/sites` to ArcLight root `./sites`:
 
 ```bash
 bundle exec rake "site:sync"
 ```
 
+This is used for production deployments. At container runtime a
+specific site configuration will be copied into place, which
+enables us to use a single Docker image for multiple deployments.
+
 ## Running ArcLight locally
 
 ```bash
 cd ./arclight
-./arclight
+./bin/dev
 ```
 
 This will start Solr and run the Rails dev server. ArcLight will be

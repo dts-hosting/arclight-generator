@@ -19,6 +19,8 @@ operations:
       text: "/config/repositories.yml\n"
     - file: ".gitignore"
       text: "/public/styles.css\n"
+    - file: "Procfile.dev"
+      text: "solr: docker compose up\n"
   copy:
     - file: "files/arclight"
       to: "arclight"
