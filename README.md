@@ -106,8 +106,7 @@ enables us to use a single Docker image for multiple deployments.
 ## Running ArcLight locally
 
 ```bash
-cd ./arclight
-./bin/dev
+bundle exec rake "arclight:run"
 ```
 
 This will start Solr and run the Rails dev server. ArcLight will be

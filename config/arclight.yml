@@ -22,18 +22,17 @@ operations:
     - file: "Procfile.dev"
       text: "solr: docker compose up\n"
   copy:
-    - file: "files/docker-compose.yml"
-      to: "docker-compose.yml"
     - file: "files/.standard.yml"
       to: ".standard.yml"
+    - file: "files/docker-compose.yml"
+      to: "docker-compose.yml"
+    - file: "files/_footer.html.erb"
+      to: "app/views/shared/_footer.html.erb"
   create:
     - file: "public/styles.css"
       text: "/* Site specific CSS (not asset-pipelined) */"
-  insert:
-    - file: "app/views/layouts/application.html.erb"
-      after: "<%= yield :head %>\n"
-      text: "<link rel=\"stylesheet\" type=\"text/css\" href=\"/styles.css\">\n"
   remove:
     - ".rubocop.yml"
     - ".solr_wrapper.yml"
     - "app/javascript/controllers/hello_controller.js"
+    - "app/views/layouts/application.html.erb"

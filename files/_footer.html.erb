@@ -1,0 +1,12 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "/styles.css"
+    link.type = "text/css";
+    link.media = "all";
+
+    var head = document.head || document.getElementsByTagName("head")[0];
+    head.appendChild(link);
+  });
+</script>

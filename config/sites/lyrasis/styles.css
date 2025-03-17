@@ -1,2 +1,2 @@
 /* Lyrasis styles */
-header nav { display: none; }
+header nav { display: none !important; }

@@ -13,6 +13,7 @@ end
 run "bundle"
 
 after_bundle do
+  empty_directory "app/views/shared"
   process_file_operations(config["operations"])
   directory File.join(__dir__, "config", "sites"), "sites", force: true
 
