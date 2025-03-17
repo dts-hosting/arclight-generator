@@ -10,12 +10,12 @@ gem_group :development, :test do
   gem "standard-rails"
 end
 
-process_file_operations(config["operations"])
-directory File.join(__dir__, "config", "sites"), "sites", force: true
-
 run "bundle"
 
 after_bundle do
+  process_file_operations(config["operations"])
+  directory File.join(__dir__, "config", "sites"), "sites", force: true
+
   in_root do
     generate "blacklight:install"
     generate "arclight:install", "-f"

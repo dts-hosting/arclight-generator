@@ -22,8 +22,6 @@ operations:
     - file: "Procfile.dev"
       text: "solr: docker compose up\n"
   copy:
-    - file: "files/arclight"
-      to: "arclight"
     - file: "files/docker-compose.yml"
       to: "docker-compose.yml"
     - file: "files/.standard.yml"
