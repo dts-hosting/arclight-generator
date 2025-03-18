@@ -1,5 +1,6 @@
 namespace :arclight do
   task :build do
+    Rake::Task["site:sync"].invoke
     Dir.chdir(File.join(__dir__, "arclight")) do
       system("docker compose -f docker-compose-qa.yml build")
     end
@@ -48,7 +49,7 @@ namespace :site do
   task :sync do
     FileUtils.cp_r(
       File.join(__dir__, "config", "sites"),
-      File.join(__dir__, "arclight", "sites")
+      File.join(__dir__, "arclight")
     )
   end
 end
