@@ -17,6 +17,8 @@ def process_file_operations(operations)
         end
       when "remove"
         remove_file action
+      when "replace"
+        gsub_file action["file"], /#{action["from"]}/, action["to"]
       end
     end
   end

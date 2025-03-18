@@ -11,4 +11,5 @@ rails new arclight \
   --css bootstrap \
   -a propshaft \
   -j importmap \
-  --skip-kamal
+  --skip-kamal \
+  --skip-solid

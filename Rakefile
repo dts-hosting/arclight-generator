@@ -1,9 +1,21 @@
 namespace :arclight do
-  task :run do
+  task :build do
+    Dir.chdir(File.join(__dir__, "arclight")) do
+      system("docker compose -f docker-compose-qa.yml build")
+    end
+  end
+
+  task :dev do
     Bundler.with_clean_env do
       Dir.chdir(File.join(__dir__, "arclight")) do
         system("./bin/dev")
       end
+    end
+  end
+
+  task :qa do
+    Dir.chdir(File.join(__dir__, "arclight")) do
+      system("docker compose -f docker-compose-qa.yml up")
     end
   end
 end

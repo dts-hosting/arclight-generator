@@ -106,13 +106,16 @@ enables us to use a single Docker image for multiple deployments.
 ## Running ArcLight locally
 
 ```bash
-bundle exec rake "arclight:run"
+bundle exec rake "arclight:dev"
 ```
 
 This will start Solr and run the Rails dev server. ArcLight will be
 running at: `http://localhost:3000`. If you encounter an error about
 Solr not being available try again after a few seconds.
 
-## Building the ArcLight Docker image
+## Build and run the ArcLight Docker image
 
-TODO
+```bash
+bundle exec rake "arclight:build"
+bundle exec rake "arclight:qa"
+```
