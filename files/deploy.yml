@@ -1,0 +1,50 @@
+# This is for a demo deployment of Arclight using the Lyrasis Docker image
+service: arclight
+
+image: lyrasis/arclight
+
+builder:
+  arch: amd64
+
+registry:
+  username:
+    - DOCKER_REGISTRY_USER
+  password:
+    - DOCKER_REGISTRY_PASSWORD
+
+ssh:
+  config: true
+  user: ubuntu
+
+env:
+  clear:
+    ARCLIGHT_SITE: lyrasis
+    RAILS_ASSUME_SSL: true
+    RAILS_ENV: production
+    RAILS_FORCE_SSL: true
+    RAILS_LOG_TO_STDOUT: true
+    RAILS_SERVE_STATIC_FILES: true
+    SECRET_KEY_BASE: c3260367c6cdbdf26e3af9ab5c36beab4bfb0ba59cf18c7ccc5313f58ffe882123c6020dc4ba6d3cc1acf214d23b5101de1e7d2385787dac4677f92fdb823a44
+    SOLR_URL: http://arclight-solr:8983/solr/arclight
+
+proxy:
+  ssl: true
+  host: arclight.lyrasistechnology.org
+  app_port: 3000
+
+servers:
+  web:
+    hosts:
+      - arclight.lyrasistechnology.org
+    env:
+      SOLID_QUEUE_IN_PUMA: true
+
+accessories:
+  solr:
+    image: lyrasis/arclight-solr
+    roles:
+      - web
+    port: 8983
+    cmd: solr-create -c arclight -d arclight
+    volumes:
+      - "/storage/solr:/var/solr"

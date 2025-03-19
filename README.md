@@ -119,3 +119,24 @@ Solr not being available try again after a few seconds.
 bundle exec rake "arclight:build"
 bundle exec rake "arclight:qa"
 ```
+
+## Deploy the ArcLight demo site
+
+```bash
+cd arclight
+
+# verify connections to the server
+bundle exec kamal server bootstrap
+
+# verify access to docker registry
+bundle exec kamal registry login
+
+# run the deploy process
+bundle exec kamal deploy
+
+# run a command on the container
+bundle exec kamal app exec "bin/rails about"
+
+# connect to the container
+bundle exec kamal app exec -i "bin/rails console"
+```

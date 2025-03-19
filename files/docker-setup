@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Docker set up on $KAMAL_HOSTS..."
+
+kamal server exec "sudo usermod -aG docker ubuntu"
+kamal server exec "sudo mkdir -p /storage/solr && sudo chown -R 8983:8983 /storage/solr"

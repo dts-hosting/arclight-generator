@@ -7,6 +7,7 @@ def process_file_operations(operations)
         append_to_file action["file"], action["text"]
       when "copy"
         copy_file File.join(__dir__, action["file"]), action["to"]
+        File.chmod(action["mode"].to_i(8), action["to"]) if action["mode"]
       when "create"
         create_file action["file"] do
           action["text"]
