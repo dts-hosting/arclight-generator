@@ -1,3 +1,9 @@
+require "net/http"
+require "uri"
+require "json"
+
+SOLR_URL = "http://localhost:8983/solr/arclight"
+
 namespace :arclight do
   task :build do
     Rake::Task["site:sync"].invoke
@@ -9,7 +15,7 @@ namespace :arclight do
   task :dev do
     Bundler.with_clean_env do
       Dir.chdir(File.join(__dir__, "arclight")) do
-        system("./bin/dev")
+        system("SOLR_URL=#{SOLR_URL} ./bin/dev")
       end
     end
   end
@@ -18,6 +24,19 @@ namespace :arclight do
     Dir.chdir(File.join(__dir__, "arclight")) do
       system("docker compose -f docker-compose-qa.yml up")
     end
+  end
+
+  task :reset do
+    solr_url = "#{SOLR_URL}/update"
+    uri = URI.parse(solr_url)
+    http = Net::HTTP.new(uri.host, uri.port)
+    request = Net::HTTP::Post.new(uri.path, {"Content-Type" => "text/xml"})
+    request.body = "<delete><query>*:*</query></delete>"
+    http.request(request) # make the delete request
+    request.body = "<commit/>"
+    response = http.request(request) # send commit
+    puts "Response Code: #{response.code}"
+    puts "Response Body: #{response.body}"
   end
 end
 

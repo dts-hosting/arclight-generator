@@ -120,6 +120,12 @@ bundle exec rake "arclight:build"
 bundle exec rake "arclight:qa"
 ```
 
+## Reset the solr index
+
+```bash
+bundle exec rake "arclight:reset"
+```
+
 ## Deploy the ArcLight demo site
 
 ```bash

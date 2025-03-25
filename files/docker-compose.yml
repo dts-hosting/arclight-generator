@@ -2,7 +2,7 @@
 services:
   solr:
     image: solr:8
-    command: solr-create -c blacklight-core -d arclight
+    command: solr-create -c arclight -d arclight
     ports:
       - "8983:8983"
     volumes:
