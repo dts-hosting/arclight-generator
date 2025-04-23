@@ -46,6 +46,8 @@ operations:
     - file: "files/static_controller.rb"
       to: "app/controllers/static_controller.rb"
   create:
+    - file: "app/views/static/index.html.erb"
+      text: "<h1>Placeholder</h1>"
     - file: "public/styles.css"
       text: "/* Site specific CSS (not asset-pipelined) */"
   insert:
@@ -60,7 +62,7 @@ operations:
   replace:
     - file: "Dockerfile"
       from: "chown -R rails:rails.*"
-      to: "chown -R rails:rails config db log public storage tmp"
+      to: "chown -R rails:rails app config db log public storage tmp"
     - file: "config/database.yml"
       from: "# database: path/to/persistent/storage/production.sqlite3"
       to: "database: storage/production.sqlite3"
