@@ -1,4 +1,6 @@
 en:
   arclight:
     masthead_heading_html: |
-      Archival Collections at Lyrasis
+      <img src="/logo.png" alt="Logo" class="img-fluid" style="width: 300px; height: 75px;">
+    static_title: Archival Collections at Lyrasis
+

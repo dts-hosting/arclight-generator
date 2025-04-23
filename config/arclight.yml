@@ -43,6 +43,8 @@ operations:
       to: ".kamal/secrets"
     - file: "files/site.rake"
       to: "lib/tasks/site.rake"
+    - file: "files/static_controller.rb"
+      to: "app/controllers/static_controller.rb"
   create:
     - file: "public/styles.css"
       text: "/* Site specific CSS (not asset-pipelined) */"
@@ -62,6 +64,9 @@ operations:
     - file: "config/database.yml"
       from: "# database: path/to/persistent/storage/production.sqlite3"
       to: "database: storage/production.sqlite3"
+    - file: "config/routes.rb"
+      from: "arclight.*epositories.index"
+      to: "static#index"
     - file: "config/environments/production.rb"
       from: "config.assume_ssl = true"
       to: "config.assume_ssl = ENV.fetch('RAILS_ASSUME_SSL', true) == 'true'"

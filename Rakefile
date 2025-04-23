@@ -48,6 +48,11 @@ namespace :site do
     )
 
     FileUtils.cp(
+      File.join(__dir__, "config", "sites", args[:site], "index.html.erb"),
+      File.join(__dir__, "arclight", "app", "views", "static", "index.html.erb")
+    )
+
+    FileUtils.cp(
       File.join(__dir__, "config", "sites", args[:site], "locales.yml"),
       File.join(__dir__, "arclight", "config", "locales", "en.yml")
     )
@@ -56,11 +61,18 @@ namespace :site do
       File.join(__dir__, "config", "sites", args[:site], "styles.css"),
       File.join(__dir__, "arclight", "public", "styles.css")
     )
+
+    logo_path = File.join(__dir__, "config", "sites", args[:site], "logo.png")
+    if File.exist?(logo_path)
+      FileUtils.cp(logo_path, File.join(__dir__, "arclight", "app", "assets", "images", "logo.png"))
+      FileUtils.cp(logo_path, File.join(__dir__, "arclight", "public", "logo.png"))
+    end
   end
 
   task :init, [:site] do |_t, args|
     FileUtils.mkdir_p(File.join(__dir__, "config", "sites", args[:site]))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "repositories.yml"))
+    FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "index.html.erb"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "locales.yml"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "styles.css"))
   end

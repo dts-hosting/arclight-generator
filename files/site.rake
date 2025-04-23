@@ -8,6 +8,11 @@ namespace :site do
     )
 
     FileUtils.cp(
+      Rails.root.join("sites", site, "index.html.erb"),
+      Rails.root.join("app", "views", "static", "index.html.erb")
+    )
+
+    FileUtils.cp(
       Rails.root.join("sites", site, "locales.yml"),
       Rails.root.join("config", "locales", "en.yml")
     )
@@ -16,5 +21,11 @@ namespace :site do
       Rails.root.join("sites", site, "styles.css"),
       Rails.root.join("public", "styles.css")
     )
+
+    logo_path = File.join("sites", site, "logo.png")
+    if File.exist?(logo_path)
+      FileUtils.cp(logo_path, File.join("app", "assets", "images", "logo.png"))
+      FileUtils.cp(logo_path, File.join("public", "logo.png"))
+    end
   end
 end

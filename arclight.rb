@@ -14,7 +14,7 @@ run "bundle"
 
 after_bundle do
   empty_directory "app/views/shared"
-  process_file_operations(config["operations"])
+  empty_directory "app/views/static"
   directory File.join(__dir__, "config", "sites"), "sites", force: true
 
   in_root do
@@ -22,6 +22,8 @@ after_bundle do
     generate "arclight:install", "-f"
     rails_command "db:migrate"
   end
+
+  process_file_operations(config["operations"])
 
   run "bundle remove solr_wrapper"
   run "bundle exec standardrb --fix-unsafely"
