@@ -27,14 +27,12 @@ namespace :arclight do
   end
 
   task :reset do
-    solr_url = "#{SOLR_URL}/update"
+    solr_url = "#{SOLR_URL}/update?commit=true"
     uri = URI.parse(solr_url)
     http = Net::HTTP.new(uri.host, uri.port)
-    request = Net::HTTP::Post.new(uri.path, {"Content-Type" => "text/xml"})
+    request = Net::HTTP::Post.new(uri.request_uri, {"Content-Type" => "text/xml"})
     request.body = "<delete><query>*:*</query></delete>"
-    http.request(request) # make the delete request
-    request.body = "<commit/>"
-    response = http.request(request) # send commit
+    response = http.request(request) # make the delete request
     puts "Response Code: #{response.code}"
     puts "Response Body: #{response.body}"
   end
