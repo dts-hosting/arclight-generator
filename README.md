@@ -96,7 +96,23 @@ bundle exec rake "site:copy[lyrasis]"
 
 The dev server will now be set to use this site's configuration.
 
-### Syncing all site configuration
+## Running ArcLight locally
+
+```bash
+bundle exec rake "arclight:dev"
+```
+
+This will start Solr and run the Rails dev server. ArcLight will be
+running at: `http://localhost:3000`. If you encounter an error about
+Solr not being available try again after a few seconds.
+
+## Reset the solr index
+
+```bash
+bundle exec rake "arclight:reset"
+```
+
+## Syncing all site configuration
 
 Transfers all `./config/sites` to ArcLight root `./sites`:
 
@@ -108,27 +124,11 @@ This is used for production deployments. At container runtime a
 specific site configuration will be copied into place, which
 enables us to use a single Docker image for multiple deployments.
 
-## Running ArcLight locally
-
-```bash
-bundle exec rake "arclight:dev"
-```
-
-This will start Solr and run the Rails dev server. ArcLight will be
-running at: `http://localhost:3000`. If you encounter an error about
-Solr not being available try again after a few seconds.
-
 ## Build and run the ArcLight Docker image
 
 ```bash
 bundle exec rake "arclight:build"
 bundle exec rake "arclight:qa"
-```
-
-## Reset the solr index
-
-```bash
-bundle exec rake "arclight:reset"
 ```
 
 ## Deploy the ArcLight demo site

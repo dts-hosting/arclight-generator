@@ -13,6 +13,7 @@ end
 run "bundle"
 
 after_bundle do
+  empty_directory "app/components/arclight"
   empty_directory "app/views/shared"
   empty_directory "app/views/static"
   directory File.join(__dir__, "config", "sites"), "sites", force: true
