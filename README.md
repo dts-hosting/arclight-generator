@@ -63,6 +63,7 @@ remove the database we're just going to ignore it.
 Per site files are required for:
 
 - `repositories.yml`
+- `downloads.yml`
 - `index.html.erb`
 - `locales.yml`
 - `styles.css`

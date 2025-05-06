@@ -8,6 +8,11 @@ namespace :site do
     )
 
     FileUtils.cp(
+      Rails.root.join("sites", site, "downloads.yml"),
+      Rails.root.join("config", "downloads.yml")
+    )
+
+    FileUtils.cp(
       Rails.root.join("sites", site, "index.html.erb"),
       Rails.root.join("app", "views", "static", "index.html.erb")
     )

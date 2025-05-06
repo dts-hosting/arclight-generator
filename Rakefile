@@ -46,6 +46,11 @@ namespace :site do
     )
 
     FileUtils.cp(
+      File.join(__dir__, "config", "sites", args[:site], "downloads.yml"),
+      File.join(__dir__, "arclight", "config", "downloads.yml")
+    )
+
+    FileUtils.cp(
       File.join(__dir__, "config", "sites", args[:site], "index.html.erb"),
       File.join(__dir__, "arclight", "app", "views", "static", "index.html.erb")
     )
@@ -70,6 +75,7 @@ namespace :site do
   task :init, [:site] do |_t, args|
     FileUtils.mkdir_p(File.join(__dir__, "config", "sites", args[:site]))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "repositories.yml"))
+    FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "downloads.yml"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "index.html.erb"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "locales.yml"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "styles.css"))
