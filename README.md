@@ -92,6 +92,8 @@ bundle exec rake "site:copy[lyrasis]"
 ```
 
 - `repositories.yml` -> `./config/repositories.yml`
+- `downloads.yml` -> `./config/downloads.yml`
+- `index.html.erb` -> `./app/views/static/index.html.erb`
 - `locales.yml` -> `./config/locales/en.yml`
 - `styles.css` -> `./public/styles.css`
 
