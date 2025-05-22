@@ -20,7 +20,7 @@ operations:
         - "/public/styles.css\n"
     - file: "Procfile.dev"
       text:
-        - "solr: docker compose up\n"
+        - "solr: docker compose build && docker compose up\n"
 
   # copies files from dirs within the files folder to arclight
   copy:

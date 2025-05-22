@@ -1,8 +1,13 @@
 ---
 services:
   solr:
-    image: solr:8
+    image: lyrasis/arclight-solr
+    build:
+      context: ./solr/conf
+      dockerfile: Dockerfile
     command: solr-create -c arclight -d arclight
+    environment:
+      SOLR_OPTS: "-Dsolr.config.lib.enabled=true"
     ports:
       - "8983:8983"
     volumes:
