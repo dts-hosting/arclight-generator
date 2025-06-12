@@ -74,6 +74,8 @@ Optional:
 
 ### Create new site configuration
 
+The instructions below deploy the default ArcLight site for Lyrasis. To deploy a new site, edit: `[lyrasis]` -> `[yoursitename]`
+
 To create an initial set of files:
 
 ```bash
@@ -98,6 +100,8 @@ bundle exec rake "site:copy[lyrasis]"
 - `styles.css` -> `./public/styles.css`
 
 The dev server will now be set to use this site's configuration.
+
+Note that when creating a new site, these files will be empty and must be configured for the site to come online. Refer to the [default configuration files](https://github.com/dts-hosting/arclight-generator/tree/main/config/sites/lyrasis) for an example.
 
 ## Running ArcLight locally
 
