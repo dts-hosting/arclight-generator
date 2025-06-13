@@ -1,0 +1,6 @@
+en:
+  arclight:
+    masthead_heading_html: |
+      <img src="/logo.png" alt="Logo" class="img-fluid" style="width: 75px; height: 75px;">
+    static_title: Archival Collections at Deployments from Scratch
+

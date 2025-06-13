@@ -1,0 +1,6 @@
+default:
+  disabled: true
+  # pdf:
+  #   template: "http://example.com/%{unitid}.pdf"
+  ead:
+    template: "https://eaddb.lyrasistechnology.org/ead/%{repository_id}/%{eadid}.xml"
