@@ -158,3 +158,40 @@ bundle exec kamal app exec "bin/rails about"
 # connect to the container
 bundle exec kamal app exec -i "bin/rails console"
 ```
+
+## Pushing Solr configs
+
+In some cases (like when **not** using Docker for Solr) you may
+want to push the Solr configuration to a readily accessible
+location like AWS S3:
+
+```bash
+export AWS_PROFILE=profile
+export BUCKET=bucket
+export SOLR_VERSION=8.11.3
+
+cd arclight/solr/conf
+
+aws s3 sync . s3://${BUCKET}/solr/${SOLR_VERSION}/arclight/conf \
+  --exclude "*" \
+  --include "*.json" \
+  --include "*.txt" \
+  --include "*.xml" \
+  --dryrun
+```
+
+Remove `--dryrun` to actually perform the upload.
+
+This can be used, for example, with Solr standalone on an EC2 server:
+
+```bash
+# ssh solr.lib.somewhere.edu
+export BUCKET=bucket
+export SOLR_VERSION=8.11.3
+
+sudo -u solr aws s3 sync s3://${BUCKET}/solr/${SOLR_VERSION} /opt/solr/server/solr/configsets/ --dryrun
+# repeat without --dryrun if all looks ok
+
+# create a core
+sudo -u solr /opt/solr/bin/solr create -c demo -d arclight
+```
