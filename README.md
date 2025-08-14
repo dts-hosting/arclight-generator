@@ -1,6 +1,6 @@
 # ArcLight generator
 
-Generates an ArcLight application and manages site configurations.
+Generates an [ArcLight](https://github.com/projectblacklight/arclight) application and manages site configurations.
 
 ## Setup
 
@@ -12,6 +12,7 @@ Requires:
 ```bash
 nvm install # install version specified in .nvmrc
 nvm use
+npm install -g yarn
 
 rbenv install -s # install version specified in .ruby-version
 bundle install
