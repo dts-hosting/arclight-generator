@@ -1,0 +1,60 @@
+---
+lyrasis-corporate-archive:
+  name: EAD Resources Repository
+  visit_notes: Please contact us to schedule a visit.
+  description: A repository dedicated to EAD Resources (Demo).
+  building: Virtal
+  contact_html: |
+    <div class="al-repository-contact-info">(202) 707-5000</div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">The Library of Congress</div>
+      <div class="al-repository-address">101 Independence Ave, SE</div>
+      <div class="al-repository-city">Washingon</div>
+      <div class="al-repository-state">DC</div>
+      <div class="al-repository-zip">20540</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/788d4eed-c300-4b44-bf33-42cd0774d37a/content
+  google_request_url: ""
+  google_request_mappings: ""
+
+lyrasis-special-collections:
+  name: Dublin Core Resources Repository
+  visit_notes: Please contact us to schedule a visit.
+  description: A repository of Dublin Core standard publications and workshops (DEMO).
+  building: Virtual
+  contact_html: |
+    <div class="al-repository-contact-info">contact@dublincore.net</div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">The Dublin Core Metadata Initiative (DCMI)</div>
+      <div class="al-repository-address"></div>
+      <div class="al-repository-city"></div>
+      <div class="al-repository-state"></div>
+      <div class="al-repository-zip"></div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/ce2233f2-ac0f-45be-a8de-3df04ce048bb/content
+  google_request_url: ""
+  google_request_mappings: ""
+
+lyrasis-test:
+  name: Visual Resources Associate (VRA) Resources Repository
+  visit_notes: Please contact us to schedule a visit.
+  description: The Visual Resources Association is a multidisciplinary organization dedicated to furthering research and education in the field of image management within the educational, cultural heritage, and commercial environments (Demo).
+  building: Virtual
+  contact_html: |
+    <div class="al-repository-contact-info">info@vraweb.org</div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address"></div>
+      <div class="al-repository-city"></div>
+      <div class="al-repository-state">Delaware</div>
+      <div class="al-repository-zip"></div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/5350a5f0-9c3c-4e15-be66-c7f222eef3c6/content
+  google_request_url: ""
+  google_request_mappings: ""
