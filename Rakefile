@@ -8,7 +8,7 @@ namespace :arclight do
   task :build do
     Rake::Task["site:sync"].invoke
     Dir.chdir(File.join(__dir__, "arclight")) do
-      system("docker compose -f docker-compose-qa.yml build")
+      system("DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f docker-compose-qa.yml build")
     end
   end
 
@@ -38,6 +38,7 @@ namespace :arclight do
   end
 end
 
+# Note: changes here should also be made to files/app/sites.rake
 namespace :site do
   task :copy, [:site] do |_t, args|
     FileUtils.cp(
@@ -65,10 +66,11 @@ namespace :site do
       File.join(__dir__, "arclight", "public", "styles.css")
     )
 
-    logo_path = File.join(__dir__, "config", "sites", args[:site], "logo.png")
+    logo_path = File.join(__dir__, "config", "sites", args[:site], "logo.webp")
+    logo_path = File.join(__dir__, "config", "sites", args[:site], "logo.png") unless File.exist?(logo_path)
     if File.exist?(logo_path)
-      FileUtils.cp(logo_path, File.join(__dir__, "arclight", "app", "assets", "images", "logo.png"))
-      FileUtils.cp(logo_path, File.join(__dir__, "arclight", "public", "logo.png"))
+      FileUtils.cp(logo_path, File.join(__dir__, "arclight", "app", "assets", "images", File.basename(logo_path)))
+      FileUtils.cp(logo_path, File.join(__dir__, "arclight", "public", File.basename(logo_path)))
     end
   end
 

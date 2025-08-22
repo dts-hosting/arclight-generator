@@ -1,6 +1,5 @@
 en:
   arclight:
     masthead_heading_html: |
-      <img src="/logo.png" alt="Logo" class="img-fluid" style="width: 300px; height: 75px;">
+      <img src="/logo.webp" alt="Logo" class="img-fluid" style="width: 300px; height: auto;">
     static_title: Archival Collections at Lyrasis
-
