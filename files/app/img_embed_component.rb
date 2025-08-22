@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-# This file is a copy from the ArcLight project.
+# This file is a copy from the ArcLight project (embed_component.rb).
 # It should be reviewed for consistency when upgrading.
 
 module Arclight
   # Render digital object links for a document
   class ImgEmbedComponent < ViewComponent::Base
     def initialize(document:, presenter:, **kwargs)
-      super
+      super()
 
       @document = document
       @presenter = presenter
