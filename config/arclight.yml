@@ -11,12 +11,14 @@ operations:
     - file: ".gitignore"
       text:
         - "/app/assets/images/logo.png\n"
+        - "/app/assets/images/logo.webp\n"
         - "/app/views/static/index.html.erb\n"
         - "/config/downloads.yml\n"
         - "/config/locales/en.yml\n"
         - "/config/repositories.yml\n"
         - "/.kamal/secrets\n"
         - "/public/logo.png\n"
+        - "/public/logo.webp\n"
         - "/public/styles.css\n"
     - file: "Procfile.dev"
       text:
@@ -34,10 +36,10 @@ operations:
           to: "app/components/arclight/img_embed_component.html.erb"
         - file: "static_controller.rb"
           to: "app/controllers/static_controller.rb"
-        - file: "_footer.html.erb"
-          to: "app/views/shared/_footer.html.erb"
         - file: "site.rake"
           to: "lib/tasks/site.rake"
+        - file: "top_navbar_component.html.erb"
+          to: "app/components/blacklight/top_navbar_component.html.erb"
     - from: "deploy"
       files:
         - file: "deploy.yml"
