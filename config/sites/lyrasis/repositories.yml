@@ -1,11 +1,31 @@
 ---
+lyrasis-metadata-archive:
+  name: Lyrasis Metadata Archive
+  visit_notes: <a href="https://hdl.handle.net/10673/2578">Please visit us virtually</a>.
+  description: The Lyrasis Metadata Archive stores and manages descriptive, structural, and administrative metadata to ensure long-term accessibility, discoverability, and preservation of digital and physical collections. (Demo).
+  building: Virtal
+  contact_html: |
+    <div class="al-repository-contact-info">metadata@lyrasis.org</div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Virtual</div>
+      <div class="al-repository-address">00000 Server Way</div>
+      <div class="al-repository-city">Cupertino</div>
+      <div class="al-repository-state">CA</div>
+      <div class="al-repository-zip">95014</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/861bcdf2-ade2-407f-9af9-4532c5e29d22/content
+  google_request_url: ""
+  google_request_mappings: ""
+
 lyrasis-corporate-archive:
   name: Lyrasis Corporate Archive
   visit_notes: Please contact us to schedule a visit.
-  description: A wonderful corporate archive for testing (DEMO).
+  description: The Lyrasis Corporate Archive preserves the organizational history, records, and legacy of Lyrasis, documenting its programs, services, governance, and impact on libraries, archives, and cultural heritage institutions. (DEMO).
   building: Building 38, Room 1E-21
   contact_html: |
-    <div class="al-repository-contact-info">Contact Info</div>
+    <div class="al-repository-contact-info">1-800-123-4567</div>
   location_html: |
     <div class="al-repository-location">
       <div class="al-repository-building">Lyrasis</div>
@@ -15,46 +35,26 @@ lyrasis-corporate-archive:
       <div class="al-repository-zip">30326</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: https://lyrasisnow.org/wp-content/uploads/2023/03/Lyrasis-Logo-w-Tagline.png
+  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/e3e594b2-8c0f-4b81-9ca4-1f4a1a4794f6/content
   google_request_url: ""
   google_request_mappings: ""
 
 lyrasis-special-collections:
   name: Lyrasis Special Collections
-  visit_notes: Please contact us to schedule a visit.
-  description: A wonderful special collections archive for testing (DEMO).
+  visit_notes: Users must have a research proposal to visit the archive - <a href="mailto:support@lyrasis.org"Contact us</a>.
+  description: The Lyrasis Special Collections showcase unique and rare materials curated to support research, education, and the preservation of cultural heritage across member institutions. (DEMO).
   building: Building 38, Room 1E-21
   contact_html: |
-    <div class="al-repository-contact-info">Contact Info</div>
+    <div class="al-repository-contact-info">collections@lyrasis.org</div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building">Lyrasis</div>
-      <div class="al-repository-address">3390 Peachtree Road, NE</div>
-      <div class="al-repository-city">Atlanta</div>
-      <div class="al-repository-state">GA</div>
-      <div class="al-repository-zip">30326</div>
+      <div class="al-repository-building">Lyrasis Library</div>
+      <div class="al-repository-address">3390 Park Avenue</div>
+      <div class="al-repository-city">New York</div>
+      <div class="al-repository-state">NY</div>
+      <div class="al-repository-zip">10024</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: https://lyrasisnow.org/wp-content/uploads/2023/03/Lyrasis-Logo-w-Tagline.png
-  google_request_url: ""
-  google_request_mappings: ""
-
-lyrasis-test:
-  name: Lyrasis Test Repository
-  visit_notes: Please contact us to schedule a visit.
-  description: A wonderful test repository for testing (QA).
-  building: Building 38, Room 1E-21
-  contact_html: |
-    <div class="al-repository-contact-info">Contact Info</div>
-  location_html: |
-    <div class="al-repository-location">
-      <div class="al-repository-building">Lyrasis</div>
-      <div class="al-repository-address">3390 Peachtree Road, NE</div>
-      <div class="al-repository-city">Atlanta</div>
-      <div class="al-repository-state">GA</div>
-      <div class="al-repository-zip">30326</div>
-      <div class="al-repository-country">USA</div>
-    </div>
-  thumbnail_url: https://lyrasisnow.org/wp-content/uploads/2023/03/Lyrasis-Logo-w-Tagline.png
+  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/36bce35a-925a-421c-8f2f-597962fa2d01/content
   google_request_url: ""
   google_request_mappings: ""
