@@ -8,7 +8,7 @@ namespace :arclight do
   task :build do
     Rake::Task["site:sync"].invoke
     Dir.chdir(File.join(__dir__, "arclight")) do
-      system("docker compose -f docker-compose-qa.yml build")
+      system("DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f docker-compose-qa.yml build")
     end
   end
 
