@@ -196,3 +196,43 @@ sudo -u solr aws s3 sync s3://${BUCKET}/solr/${SOLR_VERSION} /opt/solr/server/so
 # create a core
 sudo -u solr /opt/solr/bin/solr create -c demo -d arclight
 ```
+
+## Indexing
+
+```bash
+REPOSITORY_FILE=config/sites/lyrasis/repositories.yml \
+bundle exec traject -u http://127.0.0.1:8983/solr/arclight \
+    -i xml \
+    -s repository=lyrasis-special-collections \
+    -s id=123456 \
+    -c traject/ead2_config.rb \
+    files/eads/ead.xml
+```
+
+Where:
+
+- REPOSITORY_FILE provides the path to a `repositories.yml` config
+- `-i` indicates an xml input file
+- `-s repository=$repository` must be a repository id within `repositories.yml`
+- `-s id=$id` sets the id to use for this file's content
+- `-c traject/ead2_config.rb` is the primary traject config file
+- `files/eads/ead.xml` is the path to an EAD xml file
+
+The included traject config differs from upstream in this regard:
+
+- Settings, commented: `# provide "repository", ENV.fetch("REPOSITORY_ID", nil)`
+- Within `to_field "id"`:
+  - Commented: `# id = record.at_xpath("/ead/eadheader/eadid")&.text`
+  - Added: `id = settings["id"]`
+
+This has the consequence of losing out on traject's capacity to index
+directories of files, however it fully decouples the document id from
+data within records. Given consortial use cases where it's impossible
+to rely on fully unique and correctly formatted ead identifiers (eadid)
+this provides full control over how the document is identified making
+it much easier to support global uniqueness across repositories.
+
+When indexing EAD harvested from OAI-PMH endpoints a stable id can be
+generated from a hash of the oai url and oai identifier of a record.
+When the datestamp is updated simply re-index by re-running traject
+with the same parameters.
