@@ -239,8 +239,8 @@ fsu-special-collections-archives:
 
 ucf-special-collections:
   name: UCF Special Collections
-  visit_notes: 
-  description: 
+  visit_notes: Special Collections and University Archives is open by appointment only, Tuesday through Thursday, from 9 am to 4 pm. We require three working days' notice to retrieve materials.
+  description: Special Collections & University Archives offers access to unique materials for students, faculty, researchers, and the public.
   building: John C. Hitt Library, 5th Floor - Room 501
   contact_html: |
     <div class="al-repository-contact-info"><a href="https://library.ucf.edu/about/departments/special-collections-university-archives/">https://library.ucf.edu/about/departments/special-collections-university-archives/</a></div>
