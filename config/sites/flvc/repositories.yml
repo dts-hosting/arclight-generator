@@ -128,12 +128,12 @@ fiu-university-archives:
     <div class="al-repository-contact-info">(305) 348-3137</div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
-      <div class="al-repository-address"></div>
-      <div class="al-repository-city"></div>
-      <div class="al-repository-state"></div>
-      <div class="al-repository-zip"></div>
-      <div class="al-repository-country"></div>
+      <div class="al-repository-building">Florida International University</div>
+      <div class="al-repository-address">11200 SW 8th Street</div>
+      <div class="al-repository-city">Miami</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33199</div>
+      <div class="al-repository-country">USA</div>
     </div>
   thumbnail_url: "https://digicdn.fiu.edu/core/_assets/images/logo-top.svg"
   google_request_url: "" 
@@ -141,7 +141,7 @@ fiu-university-archives:
 
 fsu-allen-music-library-special-collections:
   name: Allen Music Library Special Collections
-  visit_notes: 
+  visit_notes: Patrons wishing to do extensive research in Special Collections should make an appointment at least 5 business days in advance with a Special Collections Librarian.
   description: The Warren D. Allen Music Librarys Special Collections is a valuable
     resource for the Florida State University community, and especially for the FSU
     College of Music. Included are items of local interest, signed items, fragile
@@ -149,17 +149,17 @@ fsu-allen-music-library-special-collections:
     copies of major treatises, high-quality reproductions of major works, piano rolls,
     Braille music, and items from as early as 1562 are among the many items contained
     within.
-  building:
+  building: FSU College of Music
   contact_html: |
-    <div class="al-repository-contact-info"></div>
+    <div class="al-repository-contact-info"><a href="https://music.fsu.edu/library/collections-print/">https://music.fsu.edu/library/collections-print/</a></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
-      <div class="al-repository-address"></div>
-      <div class="al-repository-city"></div>
-      <div class="al-repository-state"></div>
-      <div class="al-repository-zip"></div>
-      <div class="al-repository-country"></div>
+      <div class="al-repository-building">FSU College of Music</div>
+      <div class="al-repository-address">122 N. Copeland St.</div>
+      <div class="al-repository-city">Tallahassee</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32306-1601</div>
+      <div class="al-repository-country">USA</div>
     </div>
   thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
   google_request_url: "" 
@@ -169,17 +169,17 @@ fsu-college-of-law-research-center:
   name: FSU College of Law Research Center
   visit_notes: 
   description: The Research Center serves as the law library for Florida State University. Our primary mission is to train our students to produce highly sophisticated and cost-effective legal research.
-  building:
+  building: College of Law
   contact_html: |
     <div class="al-repository-contact-info"></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
-      <div class="al-repository-address"></div>
-      <div class="al-repository-city"></div>
-      <div class="al-repository-state"></div>
-      <div class="al-repository-zip"></div>
-      <div class="al-repository-country"></div>
+      <div class="al-repository-building">College of Law</div>
+      <div class="al-repository-address">425 W. Jefferson Street</div>
+      <div class="al-repository-city">Tallahassee</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32306-1601</div>
+      <div class="al-repository-country">USA</div>
     </div>
   thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
   google_request_url: "" 
@@ -195,7 +195,7 @@ fsu-john--degen-resource-room:
     analysis.
   building: 239 Fine Arts Building
   contact_html: |
-    <div class="al-repository-contact-info">(850) 645-7247 </div>
+    <div class="al-repository-contact-info">(850) 645-7247</div>
   location_html: |
     <div class="al-repository-location">
       <div class="al-repository-building"></div>
@@ -211,24 +211,19 @@ fsu-john--degen-resource-room:
 
 fsu-john-and-mable-ringling-museum-of-art-archives:
   name: The John and Mable Ringling Museum of Art Archives
-  visit_notes: 
-  description: The Ringling Archives mission is to maintain and further develop
-    a regionally important archival collection of institutional records and materials
-    that document the history of the Museum, the Ringlings, the Circus Arts, Wild
-    West shows and allied arts. The Archives holds the records of the Museum; Ringling
-    Family papers; photograph collections; Circus Arts, Wild West Shows and allied
-    arts collections; and manuscripts.
+  visit_notes: Visits to the Archives are by appointment only.
+  description: The mission of The Ringling Archives is to maintain and further develop a regionally important archival collection of institutional records and materials that document the history of the museum, the Ringling family, and circus, Wild West shows, and allied arts.
   building:
   contact_html: |
-    <div class="al-repository-contact-info"></div>
+    <div class="al-repository-contact-info"><a href="https://www.ringling.org/explore/research/archives/">https://www.ringling.org/explore/research/archives/</a></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
-      <div class="al-repository-address"></div>
-      <div class="al-repository-city"></div>
-      <div class="al-repository-state"></div>
-      <div class="al-repository-zip"></div>
-      <div class="al-repository-country"></div>
+      <div class="al-repository-building">The John and Mable Ringling Museum of Art</div>
+      <div class="al-repository-address">5401 Bay Shore Road</div>
+      <div class="al-repository-city">Sarasota</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">34243</div>
+      <div class="al-repository-country">USA</div>
     </div>
   thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
   google_request_url: "" 
