@@ -4,6 +4,7 @@ require "yaml"
 config = YAML.safe_load_file(File.join(__dir__, "config", "arclight.yml"))
 
 gem "arclight", :github => config["repository"], config["version_type"].to_sym => config["version_ref"]
+gem "blacklight", "< 9" # TODO: remove when arclight supports BL 9
 
 gem_group :development, :test do
   gem "standard"

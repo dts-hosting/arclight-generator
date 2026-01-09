@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="ead.xsd">
+
+  <eadheader>
+    <eadid countrycode="US">MS001</eadid>
+
+    <filedesc>
+      <titlestmt>
+        <titleproper>John Doe Papers</titleproper>
+      </titlestmt>
+    </filedesc>
+  </eadheader>
+
+  <archdesc level="collection">
+    <did>
+      <unittitle>John Doe Papers</unittitle>
+      <unitid>MS 001</unitid>
+      <physdesc>
+        <extent>1 box</extent>
+      </physdesc>
+    </did>
+
+    <scopecontent>
+      <p>Correspondence and notes of John Doe.</p>
+    </scopecontent>
+
+    <dsc>
+
+      <!-- Series -->
+      <c id="series-1" level="series">
+        <did>
+          <unittitle>Correspondence</unittitle>
+          <unitid>Series I</unitid>
+        </did>
+
+        <!-- File -->
+        <c id="series-1-file-1" level="file">
+          <did>
+            <unittitle>Letters from Jane Smith</unittitle>
+            <unitdate normal="1950/1955">1950–1955</unitdate>
+          </did>
+        </c>
+
+      </c>
+
+    </dsc>
+  </archdesc>
+</ead>
