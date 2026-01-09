@@ -1,0 +1,392 @@
+---
+broward-college-archives:
+  name: Broward College Archives and Special Collections
+  visit_notes: 
+  description: The department consists of three separate collecting areas - Archives
+     houses material related to Broward College history, including photos, yearbooks,
+     scrapbooks and other papers. Special Collections consists of manuscript collections
+     and Rare and Special Books not directly related to the college. The Museum Collection
+     holds cultural and natural objects from a broad range of subjects from Ancient
+     Egypt to Dinosaur Fossils.
+  building: Central Campus Library, Building 17, Room 168
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://www.broward.edu/library/archives/">https://www.broward.edu/library/archives/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">3501 Davie Road</div>
+      <div class="al-repository-city">Davie</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33314</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Logo-of-Broward-College.svg/618px-Logo-of-Broward-College.svg.png?20240909185314"
+  google_request_url: ""
+  google_request_mappings: ""
+
+fau-libraries:
+  name: Florida Atlantic University Special Collections
+  visit_notes: 
+  description: The Special Collections Department welcomes the use of its collections.
+    In order to best utilize our materials, researchers are asked to call or e-mail
+    before they visit. The department is located on the second floor, room 261 of
+    the S.E. Wimberly Library.
+  building: S. E. Wimberly Library
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://library.fau.edu/special-collections">https://library.fau.edu/special-collections</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">S. E. Wimberly Library</div>
+      <div class="al-repository-address">777 Glades Rd</div>
+      <div class="al-repository-city">Boca Raton</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33431</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.fau.edu/public-affairs/images/florida-atlantic-logo-wordmark.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
+fgcu-archives:
+  name: Florida Gulf Coast University Archives
+  visit_notes: 
+  description: The University Archives & Special Collections of the Florida Gulf Coast University Wilson G. Bradshaw Library advances research by acquiring, preserving, and providing public access to original primary source materials.
+  building: Wilson G. Bradshaw Library
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://library.fgcu.edu/uasc">https://library.fgcu.edu/uasc</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">10501 FGCU Blvd South</div>
+      <div class="al-repository-city">Fort Meyers</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33965</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://fgcucdn.fgcu.edu/_resources/images/fgcu-lettermark-fullcolor-logo.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fgcu-special-collections:
+  name: Florida Gulf Coast University Special Collections
+  visit_notes: 
+  description: The University Archives & Special Collections of the Florida Gulf Coast University Wilson G. Bradshaw Library advances research by acquiring, preserving, and providing public access to original primary source materials.
+  building: Wilson G. Bradshaw Library
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://library.fgcu.edu/uasc">https://library.fgcu.edu/uasc</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">10501 FGCU Blvd South</div>
+      <div class="al-repository-city">Fort Meyers</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33965</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://fgcucdn.fgcu.edu/_resources/images/fgcu-lettermark-fullcolor-logo.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fiu-special-collections:
+  name: FIU Special Collections
+  visit_notes: Please contact us to schedule an appointment to access research materials. Please allow 48 hours notice to retrieve requested items. Some items are housed offsite and immediate retrieval may not be possible.
+  description: We welcome everyone—students, faculty, independent researchers, and community members—to explore our collections. Special Collections houses rare and unique materials that support research, teaching, and creative discovery. Our focus is on the histories and cultures of South Florida, the Caribbean, and Latin America.
+  building: Special Collections Dept., GL 422
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://specialcollections.fiu.edu/">https://specialcollections.fiu.edu/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Florida International University</div>
+      <div class="al-repository-address">11200 SW 8th Street</div>
+      <div class="al-repository-city">Miami</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33199</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://digicdn.fiu.edu/core/_assets/images/logo-top.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fiu-university-archives:
+  name: FIU University Archives
+  visit_notes: Please contact us to schedule an appointment to access research materials. Please allow 48 hours notice to retrieve requested items. Some items are housed offsite and immediate retrieval may not be possible.
+  description: The University Archives preserves the official records and historical materials that document the growth, leadership, and legacy of Florida International University since its founding in 1965. Our mission is to support the FIU community and external researchers by providing access to the university’s institutional memory including key moments, people, and events that have shaped the university’s development and impact over time. The University Archives includes presidential papers, university publications, departmental records, photographs, event documentation, oral histories, and more.
+  building:
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://specialcollections.fiu.edu/">https://specialcollections.fiu.edu/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Florida International University</div>
+      <div class="al-repository-address">11200 SW 8th Street</div>
+      <div class="al-repository-city">Miami</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33199</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://digicdn.fiu.edu/core/_assets/images/logo-top.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fsu-allen-music-library-special-collections:
+  name: Allen Music Library Special Collections
+  visit_notes: Patrons wishing to do extensive research in Special Collections should make an appointment at least 5 business days in advance with a Special Collections Librarian.
+  description: The Warren D. Allen Music Librarys Special Collections is a valuable
+    resource for the Florida State University community, and especially for the FSU
+    College of Music. Included are items of local interest, signed items, fragile
+    items, and rare items. Valuable and unique autograph manuscripts, first edition
+    copies of major treatises, high-quality reproductions of major works, piano rolls,
+    Braille music, and items from as early as 1562 are among the many items contained
+    within.
+  building: FSU College of Music
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://music.fsu.edu/library/collections-print/">https://music.fsu.edu/library/collections-print/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">FSU College of Music</div>
+      <div class="al-repository-address">122 N. Copeland St.</div>
+      <div class="al-repository-city">Tallahassee</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32306-1601</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fsu-college-of-law-research-center:
+  name: FSU College of Law Research Center
+  visit_notes: 
+  description: The Research Center serves as the law library for Florida State University. Our primary mission is to train our students to produce highly sophisticated and cost-effective legal research.
+  building: College of Law
+  contact_html: |
+    <div class="al-repository-contact-info"><a href=https://law.fsu.edu/researchcenter">https://law.fsu.edu/researchcenter</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">College of Law</div>
+      <div class="al-repository-address">425 W. Jefferson Street</div>
+      <div class="al-repository-city">Tallahassee</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32306-1601</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fsu-john--degen-resource-room:
+  name: The John A. Degen Resource Room at FSU
+  visit_notes: 
+  description: The Degen Resource Room collects items that relate to all aspects
+    of theatre, including but not limited to musical theatre, dramatic theatre, play
+    scripts, musical scores, theatre history, acting, directing, stage production
+    and management, stage setting, scenery and lighting, costume design, and critical
+    analysis.
+  building: 239 Fine Arts Building
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://theatre.fsu.edu/facilities-performance-spaces">https://theatre.fsu.edu/facilities-performance-spaces</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">540 W. Call Street</div>
+      <div class="al-repository-city">Tallahassee</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32306-1160</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fsu-john-and-mable-ringling-museum-of-art-archives:
+  name: The John and Mable Ringling Museum of Art Archives
+  visit_notes: Visits to the Archives are by appointment only.
+  description: The mission of The Ringling Archives is to maintain and further develop a regionally important archival collection of institutional records and materials that document the history of the museum, the Ringling family, and circus, Wild West shows, and allied arts.
+  building:
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://www.ringling.org/explore/research/archives/">https://www.ringling.org/explore/research/archives/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">The John and Mable Ringling Museum of Art</div>
+      <div class="al-repository-address">5401 Bay Shore Road</div>
+      <div class="al-repository-city">Sarasota</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">34243</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+fsu-special-collections-archives:
+  name: FSU Special Collections & Archives 
+  visit_notes: 
+  description: The Special Collections & Archives Division of the Florida State University Libraries advances research by acquiring, preserving, and providing access to rare and unusual books and original primary source materials. The division includes the Special Collections & Archives Research Center, Heritage & University Archives, The Claude Pepper Library, and the Digital Library Center.
+  building: FSU Library, Special Collections & Archives
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://www.lib.fsu.edu/special-collections">https://www.lib.fsu.edu/special-collections</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">116 Honors Way</div>
+      <div class="al-repository-city">Tallahassee</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32306-2047</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+ucf-special-collections:
+  name: UCF Special Collections
+  visit_notes: Special Collections and University Archives is open by appointment only, Tuesday through Thursday, from 9 am to 4 pm. We require three working days' notice to retrieve materials.
+  description: Special Collections & University Archives offers access to unique materials for students, faculty, researchers, and the public.
+  building: John C. Hitt Library, 5th Floor - Room 501
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://library.ucf.edu/about/departments/special-collections-university-archives/">https://library.ucf.edu/about/departments/special-collections-university-archives/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">John C. Hitt Library</div>
+      <div class="al-repository-address">12701 Pegasus Drive, Building 2</div>
+      <div class="al-repository-city">Orlando</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32816-8030</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://scua.library.ucf.edu/assets/ucf.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+ucf-university-archives:
+  name: UCF University Archives
+  visit_notes: Special Collections and University Archives is open by appointment only, Tuesday through Thursday, from 9 am to 4 pm. We require three working days' notice to retrieve materials.
+  description: Special Collections & University Archives offers access to unique materials for students, faculty, researchers, and the public.
+  building: John C. Hitt Library, 5th Floor - Room 501
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://library.ucf.edu/about/departments/special-collections-university-archives/">https://library.ucf.edu/about/departments/special-collections-university-archives/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">John C. Hitt Library</div>
+      <div class="al-repository-address">12701 Pegasus Drive, Building 2</div>
+      <div class="al-repository-city">Orlando</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32816-8030</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://scua.library.ucf.edu/assets/ucf.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+unf-archives-alcfh:
+  name: Allen Lastinger Center for Florida History
+  visit_notes: 
+  description: The Allen Lastinger Center for Florida History collects primary and
+    secondary source material related to the state of Florida, from Precontact to
+    the present, placing Florida history within the larger context of the history
+    of the United States and Atlantic world. Comprised of books, maps, manuscripts,
+    postcards, and other ephemera, the Center's foundational collection has a strong
+    focus on banking, tourism, cartography, and trade. 
+  building: Thomas G. Carpenter Library, Second Floor
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://libguides.unf.edu/allenlastingercenter/aboutus">https://libguides.unf.edu/allenlastingercenter/aboutus</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Thomas G. Carpenter Library</div>
+      <div class="al-repository-address">1 UNF Drive</div>
+      <div class="al-repository-city">Jacksonville</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32224</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.unf.edu/brand/images/VerticalLogoBlue-resized.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
+unf-library-special-collections-and-university-archives:
+  name: UNF Library Special Collections and University Archives
+  visit_notes: To research using collections, please make an appointment at lib-special@unf.edu.
+  description: Special Collections and University Archives collects, preserves, and promotes the distinctive history of the Northeast Florida Region through collection access, outreach, exhibits, and programming to support scholarship, research and education.
+  building: Thomas G. Carpenter Library, Building 12
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://libguides.unf.edu/SCUA/home">https://libguides.unf.edu/SCUA/home</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Thomas G. Carpenter Library</div>
+      <div class="al-repository-address">1 UNF Drive</div>
+      <div class="al-repository-city">Jacksonville</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32224</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://www.unf.edu/brand/images/VerticalLogoBlue-resized.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+usf-stpetersburg-scua:
+  name: USF Libraries - St. Petersburg Special Collections & University Archives
+  visit_notes: Access to Special Collections is by appointment only and requires 24 hours advanced notice.
+  description: The Special Collections & University Archives unit at the St. Petersburg
+    Campus collects materials within the strategic collecting areas of Florida Studies,
+    marine and environmental sciences, journalism and media studies, literature and
+    humanities, civil rights, LGBTQ+ studies, and the institutional archives for the
+    campus. 
+  building:
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://lib.usf.edu/special-collections/st-petersburg-special-collections-university-archives/">https://lib.usf.edu/special-collections/st-petersburg-special-collections-university-archives/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">140 7th Avenue South</div>
+      <div class="al-repository-city">St. Petersburg</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33701</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://archives.lib.usf.edu/assets/usf.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
+usf-tampa-archives:
+  name: USF Libraries - Tampa Special Collections
+  visit_notes: 
+  description: The Special Collections at the Tampa Campus focuses on our core collecting
+    areas including Florida studies, LGBTQ+, Florida Environmental and Natural History
+    (FLENH), childrens and young adult literature as well as serving as the home
+    for the institutional archives for the University of South Florida. The Special
+    Collections at Tampa also encompass the Herbarium as well as our digitization
+    unit.
+  building:
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://lib.usf.edu/special-collections/">https://lib.usf.edu/special-collections/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">The University of South Florida, Tampa Campus</div>
+      <div class="al-repository-address">4202 East Fowler Ave. LIB122 </div>
+      <div class="al-repository-city">Tampa</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33620-5400</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://archives.lib.usf.edu/assets/usf.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
+uwf-history-center:
+  name: UWF University Archives and West Florida History Center
+  visit_notes: 
+  description: The University Archives and West Florida History Center has approximately 800 collections totaling about 1.8 million items. A collection may consist of personal papers, manuscripts, genealogical and business records, photographs, maps, audio and video materials, and other sources of information. We also place a "tickler" collection-level entry in the library catalog for most entries.
+  building: UWF Libraries, Bldg. 32
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://uwf.edu/library/databases-and-collections/university-archives-and-west-florida-history-center/">https://uwf.edu/library/databases-and-collections/university-archives-and-west-florida-history-center/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">University Archives and West Florida History Center</div>
+      <div class="al-repository-address">11000 University Pkwy</div>
+      <div class="al-repository-city">Pensacola</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">32514</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "https://uwf.edu/media/brand-portal/logo-basics/BrandPortalImages_2018_PrimaryStacked_Inset.png"
+  google_request_url: "" 
+  google_request_mappings: ""

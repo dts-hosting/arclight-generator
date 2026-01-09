@@ -1,0 +1,5 @@
+en:
+  arclight:
+    masthead_heading_html: |
+      <img src="/logo.png" alt="FLVC logo" class="img-fluid" style="width: auto; height: auto;">
+    static_title: Florida Virtual Campus | Archival Collections
