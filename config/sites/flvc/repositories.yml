@@ -2,20 +2,12 @@
 broward-college-archives:
   name: Broward College Archives and Special Collections
   visit_notes: 
-  description: About the Department Broward College Archives and Special Collections
-     was founded in 2004 and moved into its present facility on Central campus in
-     2008. The department consists of three separate collecting areas - Archives
+  description: The department consists of three separate collecting areas - Archives
      houses material related to Broward College history, including photos, yearbooks,
      scrapbooks and other papers. Special Collections consists of manuscript collections
      and Rare and Special Books not directly related to the college. The Museum Collection
      holds cultural and natural objects from a broad range of subjects from Ancient
-     Egypt to Dinosaur Fossils. About this SiternThis site contains finding
-     guides from Archives and Special Collections organized by Record Group (RG)
-     number and Manuscript (MS) number. Record groups range in date from 1957 to
-     the present, following the timeline of the institution. Manuscript collections
-     range in date from the late 19th century to the late twentieth century. The
-     finding guides describe the content and arrangement of collections and allow
-     users to identify material relevant to their area of interest.
+     Egypt to Dinosaur Fossils.
   building: Central Campus Library, Building 17, Room 168
   contact_html: |
     <div class="al-repository-contact-info">(954) 201-6577</div>
@@ -44,7 +36,7 @@ fau-libraries:
     <div class="al-repository-contact-info">(561) 297-6911</div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
+      <div class="al-repository-building">S. E. Wimberly Library</div>
       <div class="al-repository-address">777 Glades Rd</div>
       <div class="al-repository-city">Boca Raton</div>
       <div class="al-repository-state">FL</div>
