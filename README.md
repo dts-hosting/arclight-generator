@@ -114,6 +114,13 @@ This will start Solr and run the Rails dev server. ArcLight will be
 running at: `http://localhost:3000`. If you encounter an error about
 Solr not being available try again after a few seconds.
 
+There's a script for this too:
+
+```bash
+# can specify which site config to apply
+./run_dev.sh [lyrasis]
+```
+
 ## Reset the solr index
 
 ```bash
