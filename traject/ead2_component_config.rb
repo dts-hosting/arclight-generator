@@ -159,10 +159,6 @@ to_field "collection_ssim" do |_record, accumulator, _context|
   accumulator.concat settings[:root].output_hash["normalized_title_ssm"]
 end
 
-to_field "ead_ssi" do |_record, accumulator, _context|
-  accumulator.concat settings[:root].output_hash["ead_ssi"]
-end
-
 # This accumulates direct text from a physdesc, ignoring child elements handled elsewhere
 to_field "physdesc_tesim", extract_xpath("./did/physdesc", to_text: false) do |_record, accumulator|
   accumulator.map! do |element|
