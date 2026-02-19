@@ -306,21 +306,21 @@ end
 
 to_field "components" do |record, accumulator, context|
   child_components = record.xpath("c|c01|c02|c03|c04|c05|c06|c07|c08|c09|c10|c11|c12")
-  component_indexer = Traject::Indexer::NokogiriIndexer.new.tap do |i|
-    i.settings do
-      provide :parent, context
-      provide :root, context.settings[:root]
-      provide :counter, context.settings[:counter]
-      provide :depth, context.settings[:depth].to_i + 1
-      provide :component_traject_config, context.settings[:component_traject_config]
-      provide :component_identifier_format, context.settings[:component_identifier_format]
-    end
+  next unless child_components.any?
 
-    i.load_config_file(context.settings[:component_traject_config])
-  end
+  cached = context.settings[:cached_component_indexer]
+
+  # Save settings, set for this level, restore after recursion completes
+  saved_parent = cached.settings[:parent]
+  saved_depth = cached.settings[:depth]
+  cached.settings[:parent] = context
+  cached.settings[:depth] = context.settings[:depth].to_i + 1
 
   child_components.each do |child_component|
-    output = component_indexer.map_record(child_component)
+    output = cached.map_record(child_component)
     accumulator << output if output.keys.any?
   end
+
+  cached.settings[:parent] = saved_parent
+  cached.settings[:depth] = saved_depth
 end

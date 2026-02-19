@@ -312,6 +312,9 @@ to_field "components" do |record, accumulator, context|
     i.load_config_file(context.settings[:component_traject_config])
   end
 
+  # Cache the indexer so recursive levels reuse it instead of re-loading the config
+  component_indexer.settings[:cached_component_indexer] = component_indexer
+
   child_components.each do |child_component|
     output = component_indexer.map_record(child_component)
     accumulator << output if output.keys.any?
