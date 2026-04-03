@@ -4,18 +4,12 @@ Generates an [ArcLight](https://github.com/projectblacklight/arclight) applicati
 
 ## Setup
 
-Requires:
-
-- nodejs / nvm
-- ruby
+Install [mise](https://mise.jdx.dev/installing-mise.html) then run:
 
 ```bash
-nvm install # install version specified in .nvmrc
-nvm use
-npm install -g yarn
-
-rbenv install -s # install version specified in .ruby-version
-bundle install
+mise trust
+mise install # Ruby, Node, pnpm, Terraform
+make install # Gems, packages
 ```
 
 ## Overview
