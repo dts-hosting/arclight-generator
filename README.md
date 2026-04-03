@@ -230,10 +230,10 @@ docker run -it --rm --network host \
     -e DATABASE_URL=postgres://harvester:harvester@localhost:5432/harvester \
     -e DATA_DIR=/app/data \
     -e SOLR_URL=http://127.0.0.1:8983/solr/arclight \
-    lyrasis/harvester index arclight run "lyrasis-special-collections" "https://archivesspace.lyrasistechnology.org/oai" "Lyrasis Special Collections"
+    lyrasis/harvester index arclight "lyrasis-special-collections" "https://archivesspace.lyrasistechnology.org/oai" "Lyrasis Special Collections"
 ```
 
-The args passed to `index arclight run`:
+The args passed to `index arclight`:
 
 - arclight repository id (key) in `repositories.yml`
 - oai endpoint used for harvesting
