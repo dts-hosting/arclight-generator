@@ -20,7 +20,7 @@ broward-college-archives:
       <div class="al-repository-zip">33314</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Logo-of-Broward-College.svg/618px-Logo-of-Broward-College.svg.png?20240909185314"
+  thumbnail_url: "broward.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -43,7 +43,7 @@ fau-libraries:
       <div class="al-repository-zip">33431</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.fau.edu/public-affairs/images/florida-atlantic-logo-wordmark.png"
+  thumbnail_url: "fau.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -63,7 +63,7 @@ fgcu-archives:
       <div class="al-repository-zip">33965</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://fgcucdn.fgcu.edu/_resources/images/fgcu-lettermark-fullcolor-logo.svg"
+  thumbnail_url: "fgcu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -83,7 +83,7 @@ fgcu-special-collections:
       <div class="al-repository-zip">33965</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://fgcucdn.fgcu.edu/_resources/images/fgcu-lettermark-fullcolor-logo.svg"
+  thumbnail_url: "fgcu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -103,7 +103,7 @@ fiu-special-collections:
       <div class="al-repository-zip">33199</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://digicdn.fiu.edu/core/_assets/images/logo-top.svg"
+  thumbnail_url: "fiu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -123,7 +123,7 @@ fiu-university-archives:
       <div class="al-repository-zip">33199</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://digicdn.fiu.edu/core/_assets/images/logo-top.svg"
+  thumbnail_url: "fiu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -149,7 +149,7 @@ fsu-allen-music-library-special-collections:
       <div class="al-repository-zip">32306-1601</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  thumbnail_url: "fsu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -169,7 +169,7 @@ fsu-college-of-law-research-center:
       <div class="al-repository-zip">32306-1601</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  thumbnail_url: "fsu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -213,7 +213,7 @@ fsu-john-and-mable-ringling-museum-of-art-archives:
       <div class="al-repository-zip">34243</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  thumbnail_url: "fsu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -233,7 +233,7 @@ fsu-special-collections-archives:
       <div class="al-repository-zip">32306-2047</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  thumbnail_url: "fsu.svg"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -253,7 +253,7 @@ ucf-special-collections:
       <div class="al-repository-zip">32816-8030</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://scua.library.ucf.edu/assets/ucf.png"
+  thumbnail_url: "ucf.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -273,7 +273,7 @@ ucf-university-archives:
       <div class="al-repository-zip">32816-8030</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://scua.library.ucf.edu/assets/ucf.png"
+  thumbnail_url: "ucf.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -298,7 +298,7 @@ unf-archives-alcfh:
       <div class="al-repository-zip">32224</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.unf.edu/brand/images/VerticalLogoBlue-resized.png"
+  thumbnail_url: "unf.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -318,7 +318,7 @@ unf-library-special-collections-and-university-archives:
       <div class="al-repository-zip">32224</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.unf.edu/brand/images/VerticalLogoBlue-resized.png"
+  thumbnail_url: "unf.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -342,7 +342,7 @@ usf-stpetersburg-scua:
       <div class="al-repository-zip">33701</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://archives.lib.usf.edu/assets/usf.png"
+  thumbnail_url: "usf.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -367,7 +367,7 @@ usf-tampa-archives:
       <div class="al-repository-zip">33620-5400</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://archives.lib.usf.edu/assets/usf.png"
+  thumbnail_url: "usf.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -387,6 +387,6 @@ uwf-history-center:
       <div class="al-repository-zip">32514</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://uwf.edu/media/brand-portal/logo-basics/BrandPortalImages_2018_PrimaryStacked_Inset.png"
+  thumbnail_url: "uwf.png"
   google_request_url: "" 
   google_request_mappings: ""
