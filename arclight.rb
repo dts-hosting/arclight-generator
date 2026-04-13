@@ -4,6 +4,7 @@ require "yaml"
 config = YAML.safe_load_file(File.join(__dir__, "config", "arclight.yml"))
 
 gem "arclight", :github => config["repository"], config["version_type"].to_sym => config["version_ref"]
+gem "benchmark" # https://github.com/projectblacklight/arclight/pull/1638
 
 gem_group :development, :test do
   gem "standard"
