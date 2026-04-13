@@ -74,18 +74,19 @@ namespace :site do
     end
 
     FileUtils.cp_r(
-      Dir.glob(File.join(__dir__, "config", "sites", args[:site], "logos", "*")),
-      File.join(__dir__, "arclight", "app", "assets", "images")
+      File.join(__dir__, "config", "sites", args[:site], "repository-thumbnails"),
+      File.join(__dir__, "arclight", "public")
     )
   end
 
   task :init, [:site] do |_t, args|
-    FileUtils.mkdir_p(File.join(__dir__, "config", "sites", args[:site]))
+    FileUtils.mkdir_p(File.join(__dir__, "config", "sites", args[:site], "repository-thumbnails"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "repositories.yml"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "downloads.yml"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "index.html.erb"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "locales.yml"))
     FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "styles.css"))
+    FileUtils.touch(File.join(__dir__, "config", "sites", args[:site], "repository-thumbnails", ".gitkeep"))
   end
 
   task :sync do
