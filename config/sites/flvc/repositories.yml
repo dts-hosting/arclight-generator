@@ -63,7 +63,7 @@ fgcu-archives:
       <div class="al-repository-zip">33965</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fgcu.svg"
+  thumbnail_url: "fgcu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -83,7 +83,7 @@ fgcu-special-collections:
       <div class="al-repository-zip">33965</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fgcu.svg"
+  thumbnail_url: "fgcu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -103,7 +103,7 @@ fiu-special-collections:
       <div class="al-repository-zip">33199</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fiu.svg"
+  thumbnail_url: "fiu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -123,7 +123,67 @@ fiu-university-archives:
       <div class="al-repository-zip">33199</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fiu.svg"
+  thumbnail_url: "fiu.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+flsouthern-college-archives:
+  name: The Florida Southern College Archives
+  visit_notes: 
+  description: The College Archives contain the organizational records of Florida Southern College. Within the archives are the stories of each department and organization that has made FSC what it is today. Materials in this collection date back to the earliest days of the college, from its founding in Orlando, through subsequent moves to Sutherland (current-day Palm Harbor), Clearwater, and finally Lakeland.
+  building: Florida Southern College
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://www.flsouthern.edu/library/archives">https://www.flsouthern.edu/library/archives</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Florida Southern College</div>
+      <div class="al-repository-address">111 Lake Hollingsworth Dr.</div>
+      <div class="al-repository-city">Lakeland</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33801</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "flsouthern.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+flsouthern-mckay-manuscript-collections:
+  name: The Sarah D. and L. Kirk McKay, Jr. Archives Center Manuscript Collections
+  visit_notes: 
+  description: Manuscript Collections are unpublished papers of an individual or entity. Our archives include papers from alumni, faculty, public servants, and organizations significant to the history of FSC, Lakeland, and Central Florida.
+  building: Florida Southern College
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://www.flsouthern.edu/library/archives">https://www.flsouthern.edu/library/archives</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Florida Southern College</div>
+      <div class="al-repository-address">111 Lake Hollingsworth Dr.</div>
+      <div class="al-repository-city">Lakeland</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33801</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "flsouthern.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
+flsouthern-citrus-archives: 
+  name: The Thomas B. Mack Florida Citrus Archives
+  visit_notes: 
+  description: The Thomas B. Mack Citrus Archives include papers, research, business records, and ephemera related to the Florida Citrus Industry. These are the stories of the people and organizations who made citrus one of the most successful agricultural operations in the country and a significant part of Florida's history.
+  building: Florida Southern College
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://www.flsouthern.edu/library/archives">https://www.flsouthern.edu/library/archives</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Florida Southern College</div>
+      <div class="al-repository-address">111 Lake Hollingsworth Dr.</div>
+      <div class="al-repository-city">Lakeland</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33801</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "flsouthern.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -149,7 +209,7 @@ fsu-allen-music-library-special-collections:
       <div class="al-repository-zip">32306-1601</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.svg"
+  thumbnail_url: "fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -169,11 +229,11 @@ fsu-college-of-law-research-center:
       <div class="al-repository-zip">32306-1601</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.svg"
+  thumbnail_url: "fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
-fsu-john--degen-resource-room:
+fsu-john-degen-resource-room:
   name: The John A. Degen Resource Room at FSU
   visit_notes: 
   description: The Degen Resource Room collects items that relate to all aspects
@@ -193,7 +253,7 @@ fsu-john--degen-resource-room:
       <div class="al-repository-zip">32306-1160</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "https://www.fsu.edu/_/s3.4/img/wordmark/fsu-wordmark-gold.svg"
+  thumbnail_url: "fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -213,7 +273,7 @@ fsu-john-and-mable-ringling-museum-of-art-archives:
       <div class="al-repository-zip">34243</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.svg"
+  thumbnail_url: "fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -233,7 +293,7 @@ fsu-special-collections-archives:
       <div class="al-repository-zip">32306-2047</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.svg"
+  thumbnail_url: "fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
