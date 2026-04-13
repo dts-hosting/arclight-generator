@@ -20,7 +20,7 @@ broward-college-archives:
       <div class="al-repository-zip">33314</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "broward.png"
+  thumbnail_url: "/repository-thumbnails/broward.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -43,7 +43,7 @@ fau-libraries:
       <div class="al-repository-zip">33431</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fau.png"
+  thumbnail_url: "/repository-thumbnails/fau.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -63,7 +63,7 @@ fgcu-archives:
       <div class="al-repository-zip">33965</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fgcu.png"
+  thumbnail_url: "/repository-thumbnails/fgcu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -83,7 +83,7 @@ fgcu-special-collections:
       <div class="al-repository-zip">33965</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fgcu.png"
+  thumbnail_url: "/repository-thumbnails/fgcu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -103,7 +103,7 @@ fiu-special-collections:
       <div class="al-repository-zip">33199</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fiu.png"
+  thumbnail_url: "/repository-thumbnails/fiu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -123,7 +123,7 @@ fiu-university-archives:
       <div class="al-repository-zip">33199</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fiu.png"
+  thumbnail_url: "/repository-thumbnails/fiu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -143,7 +143,7 @@ flsouthern-college-archives:
       <div class="al-repository-zip">33801</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "flsouthern.png"
+  thumbnail_url: "/repository-thumbnails/flsouthern.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -163,7 +163,7 @@ flsouthern-mckay-manuscript-collections:
       <div class="al-repository-zip">33801</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "flsouthern.png"
+  thumbnail_url: "/repository-thumbnails/flsouthern.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -183,7 +183,7 @@ flsouthern-citrus-archives:
       <div class="al-repository-zip">33801</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "flsouthern.png"
+  thumbnail_url: "/repository-thumbnails/flsouthern.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -209,7 +209,7 @@ fsu-allen-music-library-special-collections:
       <div class="al-repository-zip">32306-1601</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.png"
+  thumbnail_url: "/repository-thumbnails/fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -229,7 +229,7 @@ fsu-college-of-law-research-center:
       <div class="al-repository-zip">32306-1601</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.png"
+  thumbnail_url: "/repository-thumbnails/fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -253,7 +253,7 @@ fsu-john-degen-resource-room:
       <div class="al-repository-zip">32306-1160</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.png"
+  thumbnail_url: "/repository-thumbnails/fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -273,7 +273,7 @@ fsu-john-and-mable-ringling-museum-of-art-archives:
       <div class="al-repository-zip">34243</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.png"
+  thumbnail_url: "/repository-thumbnails/fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -293,7 +293,7 @@ fsu-special-collections-archives:
       <div class="al-repository-zip">32306-2047</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "fsu.png"
+  thumbnail_url: "/repository-thumbnails/fsu.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -313,7 +313,7 @@ ucf-special-collections:
       <div class="al-repository-zip">32816-8030</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "ucf.png"
+  thumbnail_url: "/repository-thumbnails/ucf.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -333,7 +333,7 @@ ucf-university-archives:
       <div class="al-repository-zip">32816-8030</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "ucf.png"
+  thumbnail_url: "/repository-thumbnails/ucf.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -358,7 +358,7 @@ unf-archives-alcfh:
       <div class="al-repository-zip">32224</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "unf.png"
+  thumbnail_url: "/repository-thumbnails/unf.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -378,7 +378,7 @@ unf-library-special-collections-and-university-archives:
       <div class="al-repository-zip">32224</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "unf.png"
+  thumbnail_url: "/repository-thumbnails/unf.png"
   google_request_url: "" 
   google_request_mappings: ""
 
@@ -402,7 +402,7 @@ usf-stpetersburg-scua:
       <div class="al-repository-zip">33701</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "usf.png"
+  thumbnail_url: "/repository-thumbnails/usf.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -427,7 +427,7 @@ usf-tampa-archives:
       <div class="al-repository-zip">33620-5400</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "usf.png"
+  thumbnail_url: "/repository-thumbnails/usf.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -447,6 +447,6 @@ uwf-history-center:
       <div class="al-repository-zip">32514</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: "uwf.png"
+  thumbnail_url: "/repository-thumbnails/uwf.png"
   google_request_url: "" 
   google_request_mappings: ""

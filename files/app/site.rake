@@ -35,8 +35,8 @@ namespace :site do
     end
 
     FileUtils.cp_r(
-      Dir.glob(Rails.root.join("sites", site, "logos", "*")),
-      Rails.root.join("app", "assets", "images")
+      Rails.root.join("sites", site, "repository-thumbnails"),
+      Rails.public_path
     )
   end
 end
