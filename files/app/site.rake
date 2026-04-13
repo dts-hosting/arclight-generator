@@ -27,11 +27,16 @@ namespace :site do
       Rails.root.join("public", "styles.css")
     )
 
-    logo_path = File.join("sites", site, "logo.webp")
-    logo_path = File.join("sites", site, "logo.png") unless File.exist?(logo_path)
+    logo_path = Rails.root.join("sites", site, "logo.webp")
+    logo_path = Rails.root.join("sites", site, "logo.png") unless File.exist?(logo_path)
     if File.exist?(logo_path)
       FileUtils.cp(logo_path, File.join("app", "assets", "images", File.basename(logo_path)))
       FileUtils.cp(logo_path, File.join("public", File.basename(logo_path)))
     end
+
+    FileUtils.cp_r(
+      Dir.glob(Rails.root.join("sites", site, "logos", "*")),
+      Rails.root.join("app", "assets", "images")
+    )
   end
 end

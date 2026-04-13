@@ -72,6 +72,11 @@ namespace :site do
       FileUtils.cp(logo_path, File.join(__dir__, "arclight", "app", "assets", "images", File.basename(logo_path)))
       FileUtils.cp(logo_path, File.join(__dir__, "arclight", "public", File.basename(logo_path)))
     end
+
+    FileUtils.cp_r(
+      Dir.glob(File.join(__dir__, "config", "sites", args[:site], "logos", "*")),
+      File.join(__dir__, "arclight", "app", "assets", "images")
+    )
   end
 
   task :init, [:site] do |_t, args|
