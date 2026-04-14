@@ -1,7 +1,7 @@
 ---
 services:
   solr:
-    image: lyrasis/arclight-solr
+    image: arclight-solr
     build:
       context: ./solr/conf
       dockerfile: Dockerfile

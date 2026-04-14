@@ -1,7 +1,7 @@
 ---
 services:
   arclight:
-    image: lyrasis/arclight
+    image: arclight
     build:
       context: .
       dockerfile: Dockerfile
@@ -18,7 +18,7 @@ services:
       - SOLR_URL=http://solr:8983/solr/arclight
 
   solr:
-    image: lyrasis/arclight-solr
+    image: arclight-solr
     build:
       context: solr/conf
       dockerfile: Dockerfile
