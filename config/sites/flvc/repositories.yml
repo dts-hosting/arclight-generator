@@ -24,6 +24,66 @@ broward-college-archives:
   google_request_url: ""
   google_request_mappings: ""
 
+browardco-special-collections:
+  name: AARLCC Special Collections
+  visit_notes: 
+  description: The African American Research Library and Cultural Center Special Collections contain materials that document the contributions of persons of African, African American and Caribbean descent. The collections include rare books, artifacts, artwork, manuscript collections, oral histories and reference material.
+  building: 
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org">https://broward.lyrasistechnology.org</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">100 S. Andrews Avenue</div>
+      <div class="al-repository-city">Fort Lauderdale</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33301</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "/repository-thumbnails/browardco.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
+browardco-bienes-museum-of-the-modern-book:
+  name: 'Bienes Museum of the Modern Book: The Dianne and Michael Bienes Special Collections and Rare Book Library'
+  visit_notes: 
+  description: The Bienes Museum of the Modern Book houses rare books, artifacts, manuscripts and reference materials. Collecting areas include Florida writers' papers, Floridiana, children's literature, and WPA and New Deal literature.
+  building: 
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org">https://broward.lyrasistechnology.org</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">100 S. Andrews Avenue</div>
+      <div class="al-repository-city">Fort Lauderdale</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33301</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "/repository-thumbnails/browardco.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
+browardco-county-historical-archives:
+  name: Broward County Historical Archives 
+  visit_notes: 
+  description: The Broward County Historical Archives contains archival collections that document the local history of Broward County, Florida. The archival collections include personal papers, manuscripts and photographs, government and local organizational records, newspapers, oral history interviews, archaeological material, rare books, and serials.
+  building: 
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org">https://broward.lyrasistechnology.org</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building"></div>
+      <div class="al-repository-address">100 S. Andrews Avenue</div>
+      <div class="al-repository-city">Fort Lauderdale</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33301</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "/repository-thumbnails/browardco.png"
+  google_request_url: ""
+  google_request_mappings: ""
+
 fau-libraries:
   name: Florida Atlantic University Special Collections
   visit_notes: 
