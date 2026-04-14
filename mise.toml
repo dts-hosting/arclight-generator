@@ -5,3 +5,13 @@ ruby = "4.0.1"
 [tasks.build]
 description = "Build the ArcLight docker image"
 run = "bundle exec rake arclight:build"
+
+[tasks.push]
+description = "Push the ArcLight docker image"
+usage = '''
+arg "<namespace>" help="Docker Hub repository namespace" default="lyrasis"
+'''
+run = '''
+docker tag arclight:latest {{ usage.namespace }}/arclight:latest
+docker push {{ usage.namespace }}/arclight:latest
+'''
