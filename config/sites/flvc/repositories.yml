@@ -30,14 +30,14 @@ browardco-special-collections:
   description: The African American Research Library and Cultural Center Special Collections contain materials that document the contributions of persons of African, African American and Caribbean descent. The collections include rare books, artifacts, artwork, manuscript collections, oral histories and reference material.
   building: 
   contact_html: |
-    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org">https://broward.lyrasistechnology.org</a></div>
+    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org/repositories/2">https://broward.lyrasistechnology.org/repositories/2</a></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
-      <div class="al-repository-address">100 S. Andrews Avenue</div>
+      <div class="al-repository-building">African American Research Library and Cultural Center, Broward County Library</div>
+      <div class="al-repository-address">2650 Sistrunk Boulevard</div>
       <div class="al-repository-city">Fort Lauderdale</div>
       <div class="al-repository-state">FL</div>
-      <div class="al-repository-zip">33301</div>
+      <div class="al-repository-zip">33311</div>
       <div class="al-repository-country">USA</div>
     </div>
   thumbnail_url: "/repository-thumbnails/browardco.png"
@@ -50,10 +50,10 @@ browardco-bienes-museum-of-the-modern-book:
   description: The Bienes Museum of the Modern Book houses rare books, artifacts, manuscripts and reference materials. Collecting areas include Florida writers' papers, Floridiana, children's literature, and WPA and New Deal literature.
   building: 
   contact_html: |
-    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org">https://broward.lyrasistechnology.org</a></div>
+    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org/repositories/3">https://broward.lyrasistechnology.org/repositories/3</a></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
+      <div class="al-repository-building">Bienes Museum of the Modern Book, Broward County Library</div>
       <div class="al-repository-address">100 S. Andrews Avenue</div>
       <div class="al-repository-city">Fort Lauderdale</div>
       <div class="al-repository-state">FL</div>
@@ -70,10 +70,10 @@ browardco-county-historical-archives:
   description: The Broward County Historical Archives contains archival collections that document the local history of Broward County, Florida. The archival collections include personal papers, manuscripts and photographs, government and local organizational records, newspapers, oral history interviews, archaeological material, rare books, and serials.
   building: 
   contact_html: |
-    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org">https://broward.lyrasistechnology.org</a></div>
+    <div class="al-repository-contact-info"><a href="https://broward.lyrasistechnology.org/repositories/4">https://broward.lyrasistechnology.org/repositories/4</a></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
+      <div class="al-repository-building">Broward County Historical Archives, Broward County Library</div>
       <div class="al-repository-address">100 S. Andrews Avenue</div>
       <div class="al-repository-city">Fort Lauderdale</div>
       <div class="al-repository-state">FL</div>
@@ -85,13 +85,13 @@ browardco-county-historical-archives:
   google_request_mappings: ""
 
 fau-libraries:
-  name: Florida Atlantic University Special Collections
+  name: Florida Atlantic University Libraries
   visit_notes: 
   description: The Special Collections Department welcomes the use of its collections.
     In order to best utilize our materials, researchers are asked to call or e-mail
     before they visit. The department is located on the second floor, room 261 of
     the S.E. Wimberly Library.
-  building: S. E. Wimberly Library
+  building: 
   contact_html: |
     <div class="al-repository-contact-info"><a href="https://library.fau.edu/special-collections">https://library.fau.edu/special-collections</a></div>
   location_html: |
@@ -111,12 +111,12 @@ fgcu-archives:
   name: Florida Gulf Coast University Archives
   visit_notes: 
   description: The University Archives & Special Collections of the Florida Gulf Coast University Wilson G. Bradshaw Library advances research by acquiring, preserving, and providing public access to original primary source materials.
-  building: Wilson G. Bradshaw Library
+  building: 
   contact_html: |
     <div class="al-repository-contact-info"><a href="https://library.fgcu.edu/uasc">https://library.fgcu.edu/uasc</a></div>
   location_html: |
     <div class="al-repository-location">
-      <div class="al-repository-building"></div>
+      <div class="al-repository-building">Wilson G. Bradshaw Library</div>
       <div class="al-repository-address">10501 FGCU Blvd South</div>
       <div class="al-repository-city">Fort Meyers</div>
       <div class="al-repository-state">FL</div>
@@ -131,7 +131,7 @@ fgcu-special-collections:
   name: Florida Gulf Coast University Special Collections
   visit_notes: 
   description: The University Archives & Special Collections of the Florida Gulf Coast University Wilson G. Bradshaw Library advances research by acquiring, preserving, and providing public access to original primary source materials.
-  building: Wilson G. Bradshaw Library
+  building:
   contact_html: |
     <div class="al-repository-contact-info"><a href="https://library.fgcu.edu/uasc">https://library.fgcu.edu/uasc</a></div>
   location_html: |
@@ -187,6 +187,26 @@ fiu-university-archives:
   google_request_url: "" 
   google_request_mappings: ""
 
+fiu-wolfsonian:
+  name: "The Wolfsonian-FIU"
+  visit_notes: Please contact us to schedule an appointment to access research materials. Please allow 48 hours notice to retrieve requested items. Some items are housed offsite and immediate retrieval may not be possible.
+  description: The University Archives preserves the official records and historical materials that document the growth, leadership, and legacy of Florida International University since its founding in 1965. Our mission is to support the FIU community and external researchers by providing access to the university’s institutional memory including key moments, people, and events that have shaped the university’s development and impact over time. The University Archives includes presidential papers, university publications, departmental records, photographs, event documentation, oral histories, and more.
+  building:
+  contact_html: |
+    <div class="al-repository-contact-info"><a href="https://wolfsonian.org/research/collection/">https://wolfsonian.org/research/collection/</a></div>
+  location_html: |
+    <div class="al-repository-location">
+      <div class="al-repository-building">Florida International University</div>
+      <div class="al-repository-address">11200 SW 8th Street</div>
+      <div class="al-repository-city">Miami</div>
+      <div class="al-repository-state">FL</div>
+      <div class="al-repository-zip">33199</div>
+      <div class="al-repository-country">USA</div>
+    </div>
+  thumbnail_url: "/repository-thumbnails/fiu.png"
+  google_request_url: "" 
+  google_request_mappings: ""
+
 flsouthern-college-archives:
   name: The Florida Southern College Archives
   visit_notes: 
@@ -228,7 +248,7 @@ flsouthern-mckay-manuscript-collections:
   google_request_mappings: ""
 
 flsouthern-citrus-archives: 
-  name: The Thomas B. Mack Florida Citrus Archives
+  name: Thomas B. Mack Florida Citrus Archives
   visit_notes: 
   description: The Thomas B. Mack Citrus Archives include papers, research, business records, and ephemera related to the Florida Citrus Industry. These are the stories of the people and organizations who made citrus one of the most successful agricultural operations in the country and a significant part of Florida's history.
   building: Florida Southern College
