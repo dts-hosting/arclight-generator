@@ -18,7 +18,15 @@ module Arclight
     end
 
     def embeddable_resources
-      resources.first(1).select { |object| embeddable?(object) }
+      @embeddable_resources ||= resources.first(1).select { |object| embeddable?(object) }
+    end
+
+    def imgable_resources
+      embeddable_resources.select { |object| object.href =~ include_patterns }
+    end
+
+    def linkable_resources
+      embeddable_resources - imgable_resources
     end
 
     def linked_resources
@@ -41,6 +49,10 @@ module Arclight
 
     def exclude_patterns
       Arclight::Engine.config.oembed_resource_exclude_patterns
+    end
+
+    def include_patterns
+      /\.(jpe?g|png|svg)(\?|#|$)/i
     end
   end
 end
