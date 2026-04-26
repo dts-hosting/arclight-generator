@@ -15,7 +15,7 @@ lyrasis-metadata-archive:
       <div class="al-repository-zip">95014</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/861bcdf2-ade2-407f-9af9-4532c5e29d22/content
+  thumbnail_url: "/repository-thumbnails/library-open-lyrasis.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -35,7 +35,7 @@ lyrasis-corporate-archive:
       <div class="al-repository-zip">30326</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/e3e594b2-8c0f-4b81-9ca4-1f4a1a4794f6/content
+  thumbnail_url: "/repository-thumbnails/lyrasis-banned.png"
   google_request_url: ""
   google_request_mappings: ""
 
@@ -55,6 +55,6 @@ lyrasis-special-collections:
       <div class="al-repository-zip">10024</div>
       <div class="al-repository-country">USA</div>
     </div>
-  thumbnail_url: https://demo.dspacedirect.org/server/api/core/bitstreams/36bce35a-925a-421c-8f2f-597962fa2d01/content
+  thumbnail_url: "/repository-thumbnails/lyrasis-read.png"
   google_request_url: ""
   google_request_mappings: ""
