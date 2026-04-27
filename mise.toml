@@ -12,6 +12,12 @@ usage = '''
 arg "<namespace>" help="Docker Hub repository namespace" default="lyrasis"
 '''
 run = '''
+date_tag=$(date +%Y%m%d)
+rails_version=$(grep -E '^    rails \(' arclight/Gemfile.lock | head -1 | sed -E 's/.*rails \(([0-9]+\.[0-9]+).*/\1/')
+arclight_sha=$(awk '/remote: https:\/\/github.com\/projectblacklight\/arclight.git/{f=1} f && /revision:/{print substr($2,1,7); exit}' arclight/Gemfile.lock)
+version_tag="${date_tag}-${rails_version}-${arclight_sha}"
 docker tag arclight:latest {{ usage.namespace }}/arclight:latest
+docker tag arclight:latest {{ usage.namespace }}/arclight:${version_tag}
 docker push {{ usage.namespace }}/arclight:latest
+docker push {{ usage.namespace }}/arclight:${version_tag}
 '''
