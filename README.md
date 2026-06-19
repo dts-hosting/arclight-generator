@@ -41,7 +41,7 @@ operations: [] # file processing
 To create the application at `./arclight`:
 
 ```bash
-./generate-arclight
+mise run generate
 ```
 
 ### ArcLight database

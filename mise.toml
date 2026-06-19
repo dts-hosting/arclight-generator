@@ -6,6 +6,21 @@ ruby = "4.0.1"
 description = "Build the ArcLight docker image"
 run = "bundle exec rake arclight:build"
 
+[tasks.generate]
+description = "Generate the ArcLight application"
+depends = ["reset"]
+run = """
+rails new arclight \
+  -d sqlite3 \
+  -m ./arclight.rb \
+  --css bootstrap \
+  -a propshaft \
+  -j importmap \
+  --force \
+  --skip-kamal \
+  --skip-solid
+"""
+
 [tasks.push]
 description = "Push the ArcLight docker image"
 usage = '''
@@ -21,3 +36,7 @@ docker tag arclight:latest {{ usage.namespace }}/arclight:${version_tag}
 docker push {{ usage.namespace }}/arclight:latest
 docker push {{ usage.namespace }}/arclight:${version_tag}
 '''
+
+[tasks.reset]
+description = "Delete the generated ArcLight application"
+run = "rm -rf ./arclight"
