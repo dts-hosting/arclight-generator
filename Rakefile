@@ -8,7 +8,9 @@ namespace :arclight do
   task :build do
     Rake::Task["site:sync"].invoke
     Dir.chdir(File.join(__dir__, "arclight")) do
-      system("DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose -f docker-compose-qa.yml build")
+      # Local build targets the current machine architecture; multi-arch
+      # images are produced by `mise run push` via buildx.
+      system("docker compose -f docker-compose-qa.yml build")
     end
   end
 

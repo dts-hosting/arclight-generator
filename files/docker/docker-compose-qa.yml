@@ -8,7 +8,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - ARCLIGHT_SITE=lyrasis
+      - ARCLIGHT_SITE=${ARCLIGHT_SITE:-lyrasis}
       - RAILS_ASSUME_SSL=false
       - RAILS_ENV=production
       - RAILS_FORCE_SSL=false

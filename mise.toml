@@ -1,15 +1,38 @@
 [tools]
 node = "lts"
-ruby = "4.0.1"
+ruby = "4.0.5"
 
 [tasks.build]
 description = "Build the ArcLight docker image"
 run = "bundle exec rake arclight:build"
 
+[tasks.copy]
+description = "Copy a site's configuration into the ArcLight application"
+usage = '''
+arg "<site>" help="Site configuration name" default="lyrasis"
+'''
+run = 'bundle exec rake "site:copy[{{ usage.site }}]"'
+
+[tasks.dev]
+description = "Run ArcLight locally with a site's configuration"
+usage = '''
+arg "<site>" help="Site configuration name" default="lyrasis"
+'''
+run = '''
+bundle exec rake "site:copy[{{ usage.site }}]"
+bundle exec rake "arclight:dev"
+'''
+
 [tasks.generate]
 description = "Generate the ArcLight application"
 depends = ["reset"]
+# We track the arclight `main` branch (gem version 2.x), but the npm `arclight`
+# package only publishes up to 1.x. Setting BRANCH makes arclight:install run
+# `yarn add arclight@latest` instead of `arclight@^2`, avoiding the interactive
+# version prompt.
+env = { BRANCH = "main" }
 run = """
+corepack enable yarn
 rails new arclight \
   -d sqlite3 \
   -m ./arclight.rb \
@@ -21,8 +44,15 @@ rails new arclight \
   --skip-solid
 """
 
-[tasks.push]
-description = "Push the ArcLight docker image"
+[tasks.init]
+description = "Initialize a new site"
+usage = '''
+arg "<site>" help="Site configuration name" default="lyrasis"
+'''
+run = 'bundle exec rake "site:init[{{ usage.site }}]"'
+
+[tasks.image-tag]
+description = "Write the version tag to .image-tag and print the image tags `push` would produce"
 usage = '''
 arg "<namespace>" help="Docker Hub repository namespace" default="lyrasis"
 '''
@@ -31,12 +61,50 @@ date_tag=$(date +%Y%m%d)
 rails_version=$(grep -E '^    rails \(' arclight/Gemfile.lock | head -1 | sed -E 's/.*rails \(([0-9]+\.[0-9]+).*/\1/')
 arclight_sha=$(awk '/remote: https:\/\/github.com\/projectblacklight\/arclight.git/{f=1} f && /revision:/{print substr($2,1,7); exit}' arclight/Gemfile.lock)
 version_tag="${date_tag}-${rails_version}-${arclight_sha}"
-docker tag arclight:latest {{ usage.namespace }}/arclight:latest
-docker tag arclight:latest {{ usage.namespace }}/arclight:${version_tag}
-docker push {{ usage.namespace }}/arclight:latest
-docker push {{ usage.namespace }}/arclight:${version_tag}
+echo "${version_tag}" > .image-tag
+echo "{{ usage.namespace }}/arclight:latest"
+echo "{{ usage.namespace }}/arclight:${version_tag}"
 '''
+
+[tasks.push]
+description = "Build and push the multi-arch ArcLight docker image (amd64 + arm64)"
+usage = '''
+arg "<namespace>" help="Docker Hub repository namespace" default="lyrasis"
+'''
+# `image-tag` derives the version tag and writes it to .image-tag, which we read
+# here so the derivation logic lives in one place.
+depends = ["image-tag"]
+run = '''
+bundle exec rake site:sync
+version_tag=$(cat .image-tag)
+docker buildx inspect arclight-builder >/dev/null 2>&1 || \
+  docker buildx create --name arclight-builder --driver docker-container
+docker buildx build \
+  --builder arclight-builder \
+  --platform linux/amd64,linux/arm64 \
+  --tag {{ usage.namespace }}/arclight:latest \
+  --tag {{ usage.namespace }}/arclight:${version_tag} \
+  --cache-from type=registry,ref={{ usage.namespace }}/arclight:buildcache \
+  --cache-to type=registry,ref={{ usage.namespace }}/arclight:buildcache,mode=max \
+  --push \
+  arclight
+'''
+
+[tasks.qa]
+description = "Run the ArcLight QA docker stack with a site's configuration"
+usage = '''
+arg "<site>" help="Site configuration name" default="lyrasis"
+'''
+run = 'ARCLIGHT_SITE={{ usage.site }} bundle exec rake arclight:qa'
 
 [tasks.reset]
 description = "Delete the generated ArcLight application"
 run = "rm -rf ./arclight"
+
+[tasks.solr-reset]
+description = "Reset the Solr index"
+run = "bundle exec rake arclight:reset"
+
+[tasks.sync]
+description = "Sync all site configuration into the ArcLight application"
+run = "bundle exec rake site:sync"

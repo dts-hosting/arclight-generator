@@ -9,7 +9,7 @@ Install [mise](https://mise.jdx.dev/installing-mise.html) then run:
 ```bash
 mise trust
 mise install # Ruby, Node, pnpm, Terraform
-make install # Gems, packages
+bundle install # Gems, packages
 ```
 
 ## Overview
@@ -74,7 +74,7 @@ The instructions below deploy the default ArcLight site for Lyrasis. To deploy a
 To create an initial set of files:
 
 ```bash
-bundle exec rake "site:init[lyrasis]"
+mise run init lyrasis
 ```
 
 This generates the required files under `./config/$site`.
@@ -85,7 +85,7 @@ This copies site configuration files into the ArcLight application
 for review and testing:
 
 ```bash
-bundle exec rake "site:copy[lyrasis]"
+mise run copy lyrasis
 ```
 
 - `repositories.yml` -> `./config/repositories.yml`
@@ -101,24 +101,17 @@ Note that when creating a new site, these files will be empty and must be config
 ## Running ArcLight locally
 
 ```bash
-bundle exec rake "arclight:dev"
+mise run dev lyrasis
 ```
 
 This will start Solr and run the Rails dev server. ArcLight will be
 running at: `http://localhost:3000`. If you encounter an error about
 Solr not being available try again after a few seconds.
 
-There's a script for this too:
-
-```bash
-# can specify which site config to apply
-./run_dev.sh [lyrasis]
-```
-
 ## Reset the solr index
 
 ```bash
-bundle exec rake "arclight:reset"
+mise run solr-reset
 ```
 
 ## Syncing all site configuration
@@ -126,7 +119,7 @@ bundle exec rake "arclight:reset"
 Transfers all `./config/sites` to ArcLight root `./sites`:
 
 ```bash
-bundle exec rake "site:sync"
+mise run sync
 ```
 
 This is used for production deployments. At container runtime a
@@ -136,29 +129,8 @@ enables us to use a single Docker image for multiple deployments.
 ## Build and run the ArcLight Docker image
 
 ```bash
-bundle exec rake "arclight:build"
-bundle exec rake "arclight:qa"
-```
-
-## Deploy the ArcLight demo site
-
-```bash
-cd arclight
-
-# verify connections to the server
-bundle exec kamal server bootstrap
-
-# verify access to docker registry
-bundle exec kamal registry login
-
-# run the deploy process
-bundle exec kamal deploy
-
-# run a command on the container
-bundle exec kamal app exec "bin/rails about"
-
-# connect to the container
-bundle exec kamal app exec -i "bin/rails console"
+mise run build
+mise run qa lyrasis
 ```
 
 ## Pushing Solr configs
