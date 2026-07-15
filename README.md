@@ -144,6 +144,8 @@ export AWS_PROFILE=profile
 export BUCKET=bucket
 export SOLR_VERSION=8.11.3
 
+# copy in the updated solrconfig to enable autocommits
+cp files/solr/solrconfig.xml arclight/solr/conf/solrconfig.xml
 cd arclight/solr/conf
 
 aws s3 sync . s3://${BUCKET}/solr/${SOLR_VERSION}/arclight/conf \
