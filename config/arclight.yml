@@ -19,6 +19,7 @@ operations:
         - "/.kamal/secrets\n"
         - "/public/logo.png\n"
         - "/public/logo.webp\n"
+        - "/public/repository-thumbnails/\n"
         - "/public/styles.css\n"
     - file: "Procfile.dev"
       text:
